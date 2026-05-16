@@ -99,4 +99,4 @@ def extract_fixture_statistics() -> None:
 
 
 if __name__ == "__main__":
-    print(len(load_fixture_ids()))
+    extract_fixture_statistics()
