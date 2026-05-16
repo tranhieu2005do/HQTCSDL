@@ -48,7 +48,7 @@ def extract_lineups() -> None:
     fixture_ids = load_fixture_ids()
     output_path = OUTPUT_DIR / "lineups.json"
 
-    max_requests = 100
+    max_requests = 62
     delay_seconds = 6
 
     print(
@@ -99,4 +99,4 @@ def extract_lineups() -> None:
 
 
 if __name__ == "__main__":
-    print(len(load_fixture_ids()))
+    extract_lineups()
