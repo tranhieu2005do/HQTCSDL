@@ -8,7 +8,7 @@ from utils import ensure_output_dir, append_json_array
 
 
 def load_fixture_ids():
-    with open("output/fixtures.json", "r", encoding="utf-8") as f:
+    with open("C:/Users/Administrator/Desktop/HQTCSDL/output/fixtures.json", "r", encoding="utf-8") as f:
         fixtures = json.load(f)
 
     # tất cả fixture id từ fixtures.json
@@ -23,7 +23,7 @@ def load_fixture_ids():
                 all_fixture_ids.add(str(fixture["id"]))
 
     # đã có trong fixture_statistics.json
-    events_file = Path("output/fixture_statistics.json")
+    events_file = Path("C:/Users/Administrator/Desktop/HQTCSDL/output/fixture_statistics.json")
 
     existing_ids = set()
 
