@@ -4,7 +4,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE_DIR.parent
 
-API_KEY = "5efcc462c004f02d47c5aa76dbe1ba34"
+API_KEY = "529d5297da40eb42136fbccfc10bbb3a"
 BASE_URL = "https://v3.football.api-sports.io"
 LEAGUE_ID = 39
 SEASON = 2022
