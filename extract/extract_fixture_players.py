@@ -7,7 +7,7 @@ from config import OUTPUT_DIR
 from utils import ensure_output_dir, append_json_array
 
 
-def load_fixture_ids():
+def load_fixture_ids() -> List[str]:
     with open("output/fixtures.json", "r", encoding="utf-8") as f:
         fixtures = json.load(f)
 
@@ -22,17 +22,17 @@ def load_fixture_ids():
             if fixture and "id" in fixture:
                 all_fixture_ids.add(str(fixture["id"]))
 
-    # đã có trong fixture_statistics.json
-    events_file = Path("output/fixture_statistics.json")
+    # đã có trong fixture_players.json
+    players_file = Path("output/fixture_players.json")
 
     existing_ids = set()
 
-    if events_file.exists():
-        with open(events_file, "r", encoding="utf-8") as f:
-            events = json.load(f)
+    if players_file.exists():
+        with open(players_file, "r", encoding="utf-8") as f:
+            players = json.load(f)
 
-        for e in events:
-            endpoint = e.get("endpoint", "")
+        for p in players:
+            endpoint = p.get("endpoint", "")
             if "fixture=" in endpoint:
                 existing_ids.add(endpoint.split("fixture=")[1].split("&")[0])
 
@@ -42,38 +42,38 @@ def load_fixture_ids():
     return remaining
 
 
-def extract_fixture_statistics() -> None:
+def extract_fixture_players() -> None:
     ensure_output_dir(OUTPUT_DIR)
     client = ApiFootballClient()
     fixture_ids = load_fixture_ids()
-    output_path = OUTPUT_DIR / "fixture_statistics.json"
+    output_path = OUTPUT_DIR / "fixture_players.json"
 
     max_requests = 100
     delay_seconds = 6
 
     print(
-        f"Starting fixture statistics extraction for "
+        f"Starting fixture players extraction for "
         f"{min(len(fixture_ids), max_requests)} fixtures"
     )
 
     for index, fixture_id in enumerate(fixture_ids[:max_requests]):
-        endpoint = "/fixtures/statistics"
+        endpoint = "/fixtures/players"
 
         response = client.request(
             endpoint,
             params={"fixture": fixture_id}
         )
-        print(response)
+
         if response.get("errors"):
             print(
-                f"Skipped statistics for fixture "
-                f"{fixture_id}: {response['errors']}"
+                f"Skipped fixture players for fixture "
+                f"{fixture_id}: {response.get('errors')}"
             )
         else:
             payload = {
                 "source": "api-football",
                 "endpoint": (
-                    f"/fixtures/statistics?fixture={fixture_id}"
+                    f"/fixtures/players?fixture={fixture_id}"
                 ),
                 "data": response,
             }
@@ -81,7 +81,7 @@ def extract_fixture_statistics() -> None:
             append_json_array(output_path, payload)
 
             print(
-                f"Captured statistics for fixture "
+                f"Captured fixture players for fixture "
                 f"{fixture_id}"
             )
 
@@ -93,7 +93,7 @@ def extract_fixture_statistics() -> None:
             time.sleep(delay_seconds)
 
     print(
-        f"Fixture statistics extraction complete. "
+        f"Fixture players extraction complete. "
         f"Output saved to {output_path}"
     )
 
