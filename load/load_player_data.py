@@ -74,7 +74,7 @@ def insert_players(data: List[dict]) -> None:
         return
 
     client.insert(
-        "dim_player",
+        "dim_players",
         rows,
         column_names=[
             "id",

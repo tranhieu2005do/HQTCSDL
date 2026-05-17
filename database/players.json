@@ -105,8 +105,8 @@
         "lastname": "Bughail-Mellor",
         "date_birth": "2000-09-20",
         "nationality": "England",
-        "height": null,
-        "weight": null,
+        "height": "173 cm",
+        "weight": "80 kg",
         "image_url": "https://media.api-sports.io/football/players/138808.png"
     },
     {
@@ -128,7 +128,7 @@
         "date_birth": "2001-12-18",
         "nationality": "England",
         "height": "184",
-        "weight": null,
+        "weight": "82 kg",
         "image_url": "https://media.api-sports.io/football/players/153428.png"
     },
     {
@@ -149,8 +149,8 @@
         "lastname": "Wellens",
         "date_birth": "2002-12-05",
         "nationality": "England",
-        "height": null,
-        "weight": null,
+        "height": "175 cm",
+        "weight": "71 kg",
         "image_url": "https://media.api-sports.io/football/players/282132.png"
     },
     {
@@ -193,8 +193,8 @@
         "lastname": "Murray",
         "date_birth": "2004-09-25",
         "nationality": "England",
-        "height": null,
-        "weight": null,
+        "height": "183 cm",
+        "weight": "83 kg",
         "image_url": "https://media.api-sports.io/football/players/284391.png"
     },
     {
@@ -403,7 +403,7 @@
         "date_birth": "2003-02-17",
         "nationality": "England",
         "height": "185",
-        "weight": null,
+        "weight": "74 kg",
         "image_url": "https://media.api-sports.io/football/players/153434.png"
     },
     {
@@ -590,7 +590,7 @@
         "date_birth": "2003-10-19",
         "nationality": "England",
         "height": "188",
-        "weight": null,
+        "weight": "75 kg",
         "image_url": "https://media.api-sports.io/football/players/282133.png"
     },
     {
@@ -612,7 +612,7 @@
         "date_birth": "2003-10-24",
         "nationality": "Czechia",
         "height": "198",
-        "weight": null,
+        "weight": "86 kg",
         "image_url": "https://media.api-sports.io/football/players/284361.png"
     },
     {
@@ -623,7 +623,7 @@
         "date_birth": "2003-10-30",
         "nationality": "England",
         "height": "187",
-        "weight": null,
+        "weight": "79 kg",
         "image_url": "https://media.api-sports.io/football/players/284363.png"
     },
     {
@@ -634,7 +634,7 @@
         "date_birth": "2004-04-13",
         "nationality": "Spain",
         "height": "178 cm",
-        "weight": null,
+        "weight": "84 kg",
         "image_url": "https://media.api-sports.io/football/players/288106.png"
     },
     {
@@ -645,7 +645,7 @@
         "date_birth": "2003-09-09",
         "nationality": "England",
         "height": "181",
-        "weight": null,
+        "weight": "85 kg",
         "image_url": "https://media.api-sports.io/football/players/288107.png"
     },
     {
@@ -1216,8 +1216,8 @@
         "lastname": "Genesini",
         "date_birth": "2001-12-12",
         "nationality": "England",
-        "height": null,
-        "weight": null,
+        "height": "189 cm",
+        "weight": "83 kg",
         "image_url": "https://media.api-sports.io/football/players/196000.png"
     },
     {
@@ -1238,8 +1238,8 @@
         "lastname": "Gidaree",
         "date_birth": "2003-05-08",
         "nationality": "England",
-        "height": null,
-        "weight": null,
+        "height": "178 cm",
+        "weight": "84 kg",
         "image_url": "https://media.api-sports.io/football/players/350590.png"
     },
     {
@@ -1261,7 +1261,7 @@
         "date_birth": "2003-10-26",
         "nationality": "Wales",
         "height": "186",
-        "weight": null,
+        "weight": "85 kg",
         "image_url": "https://media.api-sports.io/football/players/382163.png"
     },
     {
@@ -1271,8 +1271,8 @@
         "lastname": "Francis",
         "date_birth": "2002-11-15",
         "nationality": "England",
-        "height": null,
-        "weight": null,
+        "height": "184 cm",
+        "weight": "83 kg",
         "image_url": "https://media.api-sports.io/football/players/382929.png"
     },
     {
@@ -1448,7 +1448,7 @@
         "date_birth": "1999-12-01",
         "nationality": "England",
         "height": "183",
-        "weight": null,
+        "weight": "83 kg",
         "image_url": "https://media.api-sports.io/football/players/196855.png"
     },
     {
@@ -1459,7 +1459,7 @@
         "date_birth": "2002-10-03",
         "nationality": "England",
         "height": "173",
-        "weight": null,
+        "weight": "75 kg",
         "image_url": "https://media.api-sports.io/football/players/347066.png"
     },
     {
@@ -1469,8 +1469,8 @@
         "lastname": "Plain",
         "date_birth": "2001-09-24",
         "nationality": "England",
-        "height": null,
-        "weight": null,
+        "height": "186 cm",
+        "weight": "89 kg",
         "image_url": "https://media.api-sports.io/football/players/382166.png"
     },
     {
@@ -1492,7 +1492,7 @@
         "date_birth": "2004-06-03",
         "nationality": "England",
         "height": "171 cm",
-        "weight": null,
+        "weight": "81 kg",
         "image_url": "https://media.api-sports.io/football/players/382930.png"
     },
     {
@@ -1580,7 +1580,7 @@
         "date_birth": "2005-03-05",
         "nationality": "Spain",
         "height": "186 cm",
-        "weight": null,
+        "weight": "76 kg",
         "image_url": "https://media.api-sports.io/football/players/390769.png"
     },
     {
@@ -1745,7 +1745,7 @@
         "date_birth": "2002-02-16",
         "nationality": "Scotland",
         "height": "190",
-        "weight": null,
+        "weight": "77 kg",
         "image_url": "https://media.api-sports.io/football/players/153412.png"
     },
     {
@@ -1767,7 +1767,7 @@
         "date_birth": "2002-11-16",
         "nationality": "Kosovo",
         "height": "180",
-        "weight": null,
+        "weight": "76 kg",
         "image_url": "https://media.api-sports.io/football/players/278059.png"
     },
     {
@@ -1777,8 +1777,8 @@
         "lastname": "O'Neill",
         "date_birth": "2003-01-08",
         "nationality": "Republic of Ireland",
-        "height": null,
-        "weight": null,
+        "height": "170 cm",
+        "weight": "79 kg",
         "image_url": "https://media.api-sports.io/football/players/278087.png"
     },
     {
@@ -1788,8 +1788,8 @@
         "lastname": "Parkes",
         "date_birth": "2004-03-28",
         "nationality": "England",
-        "height": null,
-        "weight": null,
+        "height": "187 cm",
+        "weight": "75 kg",
         "image_url": "https://media.api-sports.io/football/players/284471.png"
     },
     {
@@ -1954,7 +1954,7 @@
         "date_birth": "2001-11-08",
         "nationality": "England",
         "height": "195",
-        "weight": null,
+        "weight": "90 kg",
         "image_url": "https://media.api-sports.io/football/players/153420.png"
     },
     {
@@ -1964,8 +1964,8 @@
         "lastname": "Stansfield",
         "date_birth": "2002-11-24",
         "nationality": "England",
-        "height": null,
-        "weight": null,
+        "height": "177 cm",
+        "weight": "74 kg",
         "image_url": "https://media.api-sports.io/football/players/191971.png"
     },
     {
@@ -1976,7 +1976,7 @@
         "date_birth": "2003-10-29",
         "nationality": "England",
         "height": "183",
-        "weight": null,
+        "weight": "72 kg",
         "image_url": "https://media.api-sports.io/football/players/284470.png"
     },
     {
@@ -1987,7 +1987,7 @@
         "date_birth": "2005-03-04",
         "nationality": "Wales",
         "height": "177",
-        "weight": null,
+        "weight": "81 kg",
         "image_url": "https://media.api-sports.io/football/players/284475.png"
     },
     {
@@ -1997,8 +1997,8 @@
         "lastname": "D'Auria-Henry",
         "date_birth": "2002-11-11",
         "nationality": "England",
-        "height": null,
-        "weight": null,
+        "height": "179 cm",
+        "weight": "76 kg",
         "image_url": "https://media.api-sports.io/football/players/288121.png"
     },
     {
@@ -2008,8 +2008,8 @@
         "lastname": "Šekularac",
         "date_birth": "2003-12-07",
         "nationality": "Switzerland",
-        "height": null,
-        "weight": null,
+        "height": "175 cm",
+        "weight": "81 kg",
         "image_url": "https://media.api-sports.io/football/players/335116.png"
     },
     {
@@ -2019,8 +2019,8 @@
         "lastname": "McFarlane",
         "date_birth": "2003-09-08",
         "nationality": "England",
-        "height": null,
-        "weight": null,
+        "height": "172 cm",
+        "weight": "68 kg",
         "image_url": "https://media.api-sports.io/football/players/378868.png"
     },
     {
@@ -2163,7 +2163,7 @@
         "date_birth": "2003-07-31",
         "nationality": "England",
         "height": "178",
-        "weight": null,
+        "weight": "65 kg",
         "image_url": "https://media.api-sports.io/football/players/284316.png"
     },
     {
@@ -2173,8 +2173,8 @@
         "lastname": "Gibson-Hammond",
         "date_birth": "2002-11-10",
         "nationality": "England",
-        "height": null,
-        "weight": null,
+        "height": "184 cm",
+        "weight": "65 kg",
         "image_url": "https://media.api-sports.io/football/players/327603.png"
     },
     {
@@ -2184,8 +2184,8 @@
         "lastname": "Donnelly",
         "date_birth": "2003-06-08",
         "nationality": "Northern Ireland",
-        "height": null,
-        "weight": null,
+        "height": "193 cm",
+        "weight": "84 kg",
         "image_url": "https://media.api-sports.io/football/players/327606.png"
     },
     {
@@ -2361,7 +2361,7 @@
         "date_birth": "2000-03-31",
         "nationality": "France",
         "height": "187",
-        "weight": null,
+        "weight": "82 kg",
         "image_url": "https://media.api-sports.io/football/players/84081.png"
     },
     {
@@ -2394,7 +2394,7 @@
         "date_birth": "2002-11-13",
         "nationality": "Wales",
         "height": "179",
-        "weight": null,
+        "weight": "77 kg",
         "image_url": "https://media.api-sports.io/football/players/325967.png"
     },
     {
@@ -2404,8 +2404,8 @@
         "lastname": "Osong",
         "date_birth": "2004-09-21",
         "nationality": "England",
-        "height": null,
-        "weight": null,
+        "height": "171 cm",
+        "weight": "78 kg",
         "image_url": "https://media.api-sports.io/football/players/327602.png"
     },
     {
@@ -2415,8 +2415,8 @@
         "lastname": "Taylor",
         "date_birth": "2003-12-12",
         "nationality": "Northern Ireland",
-        "height": null,
-        "weight": null,
+        "height": "179 cm",
+        "weight": "72 kg",
         "image_url": "https://media.api-sports.io/football/players/339138.png"
     },
     {
@@ -2482,7 +2482,7 @@
         "date_birth": "1994-12-08",
         "nationality": "England",
         "height": "183",
-        "weight": null,
+        "weight": "81 kg",
         "image_url": "https://media.api-sports.io/football/players/17448.png"
     },
     {
@@ -2669,7 +2669,7 @@
         "date_birth": "2001-09-02",
         "nationality": "Hungary",
         "height": "194 cm",
-        "weight": null,
+        "weight": "80 kg",
         "image_url": "https://media.api-sports.io/football/players/89253.png"
     },
     {
@@ -2702,7 +2702,7 @@
         "date_birth": "2003-01-06",
         "nationality": "England",
         "height": "185 cm",
-        "weight": null,
+        "weight": "76 kg",
         "image_url": "https://media.api-sports.io/football/players/283288.png"
     },
     {
@@ -2712,8 +2712,8 @@
         "lastname": "Singh Raikhy",
         "date_birth": "2002-10-20",
         "nationality": "England",
-        "height": null,
-        "weight": null,
+        "height": "178 cm",
+        "weight": "71 kg",
         "image_url": "https://media.api-sports.io/football/players/283289.png"
     },
     {
@@ -2724,7 +2724,7 @@
         "date_birth": "2004-12-02",
         "nationality": "England",
         "height": "188",
-        "weight": null,
+        "weight": "86 kg",
         "image_url": "https://media.api-sports.io/football/players/284390.png"
     },
     {
@@ -2745,8 +2745,8 @@
         "lastname": "Taylor Lindley",
         "date_birth": "2002-09-02",
         "nationality": "England",
-        "height": null,
-        "weight": null,
+        "height": "176 cm",
+        "weight": "75 kg",
         "image_url": "https://media.api-sports.io/football/players/284498.png"
     },
     {
@@ -2768,7 +2768,7 @@
         "date_birth": "2005-05-06",
         "nationality": "England",
         "height": "193 cm",
-        "weight": null,
+        "weight": "77 kg",
         "image_url": "https://media.api-sports.io/football/players/312118.png"
     },
     {
@@ -2933,7 +2933,7 @@
         "date_birth": "2003-07-14",
         "nationality": "England",
         "height": "181",
-        "weight": null,
+        "weight": "65 kg",
         "image_url": "https://media.api-sports.io/football/players/278123.png"
     },
     {
