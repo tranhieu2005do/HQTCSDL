@@ -62846,5 +62846,1021 @@
         }
       ]
     }
+  },
+  {
+    "source": "api-football",
+    "endpoint": "/fixtures/statistics?fixture=868096",
+    "data": {
+      "get": "fixtures/statistics",
+      "parameters": {
+        "fixture": "868096"
+      },
+      "errors": [],
+      "results": 2,
+      "paging": {
+        "current": 1,
+        "total": 1
+      },
+      "response": [
+        {
+          "team": {
+            "id": 35,
+            "name": "Bournemouth",
+            "logo": "https://media.api-sports.io/football/teams/35.png"
+          },
+          "statistics": [
+            {
+              "type": "Shots on Goal",
+              "value": 9
+            },
+            {
+              "type": "Shots off Goal",
+              "value": 4
+            },
+            {
+              "type": "Total Shots",
+              "value": 16
+            },
+            {
+              "type": "Blocked Shots",
+              "value": 3
+            },
+            {
+              "type": "Shots insidebox",
+              "value": 12
+            },
+            {
+              "type": "Shots outsidebox",
+              "value": 4
+            },
+            {
+              "type": "Fouls",
+              "value": 12
+            },
+            {
+              "type": "Corner Kicks",
+              "value": 3
+            },
+            {
+              "type": "Offsides",
+              "value": 1
+            },
+            {
+              "type": "Ball Possession",
+              "value": "36%"
+            },
+            {
+              "type": "Yellow Cards",
+              "value": 2
+            },
+            {
+              "type": "Red Cards",
+              "value": null
+            },
+            {
+              "type": "Goalkeeper Saves",
+              "value": 3
+            },
+            {
+              "type": "Total passes",
+              "value": 305
+            },
+            {
+              "type": "Passes accurate",
+              "value": 223
+            },
+            {
+              "type": "Passes %",
+              "value": "73%"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 45,
+            "name": "Everton",
+            "logo": "https://media.api-sports.io/football/teams/45.png"
+          },
+          "statistics": [
+            {
+              "type": "Shots on Goal",
+              "value": 3
+            },
+            {
+              "type": "Shots off Goal",
+              "value": 6
+            },
+            {
+              "type": "Total Shots",
+              "value": 15
+            },
+            {
+              "type": "Blocked Shots",
+              "value": 6
+            },
+            {
+              "type": "Shots insidebox",
+              "value": 8
+            },
+            {
+              "type": "Shots outsidebox",
+              "value": 7
+            },
+            {
+              "type": "Fouls",
+              "value": 8
+            },
+            {
+              "type": "Corner Kicks",
+              "value": 5
+            },
+            {
+              "type": "Offsides",
+              "value": 1
+            },
+            {
+              "type": "Ball Possession",
+              "value": "64%"
+            },
+            {
+              "type": "Yellow Cards",
+              "value": 0
+            },
+            {
+              "type": "Red Cards",
+              "value": null
+            },
+            {
+              "type": "Goalkeeper Saves",
+              "value": 5
+            },
+            {
+              "type": "Total passes",
+              "value": 542
+            },
+            {
+              "type": "Passes accurate",
+              "value": 464
+            },
+            {
+              "type": "Passes %",
+              "value": "86%"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "source": "api-football",
+    "endpoint": "/fixtures/statistics?fixture=868076",
+    "data": {
+      "get": "fixtures/statistics",
+      "parameters": {
+        "fixture": "868076"
+      },
+      "errors": [],
+      "results": 2,
+      "paging": {
+        "current": 1,
+        "total": 1
+      },
+      "response": [
+        {
+          "team": {
+            "id": 35,
+            "name": "Bournemouth",
+            "logo": "https://media.api-sports.io/football/teams/35.png"
+          },
+          "statistics": [
+            {
+              "type": "Shots on Goal",
+              "value": 4
+            },
+            {
+              "type": "Shots off Goal",
+              "value": 2
+            },
+            {
+              "type": "Total Shots",
+              "value": 6
+            },
+            {
+              "type": "Blocked Shots",
+              "value": 0
+            },
+            {
+              "type": "Shots insidebox",
+              "value": 5
+            },
+            {
+              "type": "Shots outsidebox",
+              "value": 1
+            },
+            {
+              "type": "Fouls",
+              "value": 10
+            },
+            {
+              "type": "Corner Kicks",
+              "value": 2
+            },
+            {
+              "type": "Offsides",
+              "value": 0
+            },
+            {
+              "type": "Ball Possession",
+              "value": "31%"
+            },
+            {
+              "type": "Yellow Cards",
+              "value": 1
+            },
+            {
+              "type": "Red Cards",
+              "value": null
+            },
+            {
+              "type": "Goalkeeper Saves",
+              "value": 4
+            },
+            {
+              "type": "Total passes",
+              "value": 292
+            },
+            {
+              "type": "Passes accurate",
+              "value": 223
+            },
+            {
+              "type": "Passes %",
+              "value": "76%"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 47,
+            "name": "Tottenham",
+            "logo": "https://media.api-sports.io/football/teams/47.png"
+          },
+          "statistics": [
+            {
+              "type": "Shots on Goal",
+              "value": 7
+            },
+            {
+              "type": "Shots off Goal",
+              "value": 10
+            },
+            {
+              "type": "Total Shots",
+              "value": 23
+            },
+            {
+              "type": "Blocked Shots",
+              "value": 6
+            },
+            {
+              "type": "Shots insidebox",
+              "value": 16
+            },
+            {
+              "type": "Shots outsidebox",
+              "value": 7
+            },
+            {
+              "type": "Fouls",
+              "value": 5
+            },
+            {
+              "type": "Corner Kicks",
+              "value": 19
+            },
+            {
+              "type": "Offsides",
+              "value": 3
+            },
+            {
+              "type": "Ball Possession",
+              "value": "69%"
+            },
+            {
+              "type": "Yellow Cards",
+              "value": 2
+            },
+            {
+              "type": "Red Cards",
+              "value": null
+            },
+            {
+              "type": "Goalkeeper Saves",
+              "value": 2
+            },
+            {
+              "type": "Total passes",
+              "value": 631
+            },
+            {
+              "type": "Passes accurate",
+              "value": 567
+            },
+            {
+              "type": "Passes %",
+              "value": "90%"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "source": "api-football",
+    "endpoint": "/fixtures/statistics?fixture=868014",
+    "data": {
+      "get": "fixtures/statistics",
+      "parameters": {
+        "fixture": "868014"
+      },
+      "errors": [],
+      "results": 2,
+      "paging": {
+        "current": 1,
+        "total": 1
+      },
+      "response": [
+        {
+          "team": {
+            "id": 41,
+            "name": "Southampton",
+            "logo": "https://media.api-sports.io/football/teams/41.png"
+          },
+          "statistics": [
+            {
+              "type": "Shots on Goal",
+              "value": 1
+            },
+            {
+              "type": "Shots off Goal",
+              "value": 3
+            },
+            {
+              "type": "Total Shots",
+              "value": 7
+            },
+            {
+              "type": "Blocked Shots",
+              "value": 3
+            },
+            {
+              "type": "Shots insidebox",
+              "value": 3
+            },
+            {
+              "type": "Shots outsidebox",
+              "value": 4
+            },
+            {
+              "type": "Fouls",
+              "value": 14
+            },
+            {
+              "type": "Corner Kicks",
+              "value": 3
+            },
+            {
+              "type": "Offsides",
+              "value": 1
+            },
+            {
+              "type": "Ball Possession",
+              "value": "66%"
+            },
+            {
+              "type": "Yellow Cards",
+              "value": 1
+            },
+            {
+              "type": "Red Cards",
+              "value": null
+            },
+            {
+              "type": "Goalkeeper Saves",
+              "value": 2
+            },
+            {
+              "type": "Total passes",
+              "value": 563
+            },
+            {
+              "type": "Passes accurate",
+              "value": 464
+            },
+            {
+              "type": "Passes %",
+              "value": "82%"
+            },
+            {
+              "type": "expected_goals",
+              "value": "0.52"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 55,
+            "name": "Brentford",
+            "logo": "https://media.api-sports.io/football/teams/55.png"
+          },
+          "statistics": [
+            {
+              "type": "Shots on Goal",
+              "value": 5
+            },
+            {
+              "type": "Shots off Goal",
+              "value": 2
+            },
+            {
+              "type": "Total Shots",
+              "value": 11
+            },
+            {
+              "type": "Blocked Shots",
+              "value": 4
+            },
+            {
+              "type": "Shots insidebox",
+              "value": 7
+            },
+            {
+              "type": "Shots outsidebox",
+              "value": 4
+            },
+            {
+              "type": "Fouls",
+              "value": 10
+            },
+            {
+              "type": "Corner Kicks",
+              "value": 3
+            },
+            {
+              "type": "Offsides",
+              "value": 1
+            },
+            {
+              "type": "Ball Possession",
+              "value": "34%"
+            },
+            {
+              "type": "Yellow Cards",
+              "value": 2
+            },
+            {
+              "type": "Red Cards",
+              "value": null
+            },
+            {
+              "type": "Goalkeeper Saves",
+              "value": 0
+            },
+            {
+              "type": "Total passes",
+              "value": 289
+            },
+            {
+              "type": "Passes accurate",
+              "value": 186
+            },
+            {
+              "type": "Passes %",
+              "value": "64%"
+            },
+            {
+              "type": "expected_goals",
+              "value": "1.88"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "source": "api-football",
+    "endpoint": "/fixtures/statistics?fixture=868147",
+    "data": {
+      "get": "fixtures/statistics",
+      "parameters": {
+        "fixture": "868147"
+      },
+      "errors": [],
+      "results": 2,
+      "paging": {
+        "current": 1,
+        "total": 1
+      },
+      "response": [
+        {
+          "team": {
+            "id": 42,
+            "name": "Arsenal",
+            "logo": "https://media.api-sports.io/football/teams/42.png"
+          },
+          "statistics": [
+            {
+              "type": "Shots on Goal",
+              "value": 5
+            },
+            {
+              "type": "Shots off Goal",
+              "value": 7
+            },
+            {
+              "type": "Total Shots",
+              "value": 25
+            },
+            {
+              "type": "Blocked Shots",
+              "value": 13
+            },
+            {
+              "type": "Shots insidebox",
+              "value": 20
+            },
+            {
+              "type": "Shots outsidebox",
+              "value": 5
+            },
+            {
+              "type": "Fouls",
+              "value": 8
+            },
+            {
+              "type": "Corner Kicks",
+              "value": 12
+            },
+            {
+              "type": "Offsides",
+              "value": 1
+            },
+            {
+              "type": "Ball Possession",
+              "value": "57%"
+            },
+            {
+              "type": "Yellow Cards",
+              "value": 1
+            },
+            {
+              "type": "Red Cards",
+              "value": null
+            },
+            {
+              "type": "Goalkeeper Saves",
+              "value": 2
+            },
+            {
+              "type": "Total passes",
+              "value": 520
+            },
+            {
+              "type": "Passes accurate",
+              "value": 423
+            },
+            {
+              "type": "Passes %",
+              "value": "81%"
+            },
+            {
+              "type": "expected_goals",
+              "value": "3.25"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 33,
+            "name": "Manchester United",
+            "logo": "https://media.api-sports.io/football/teams/33.png"
+          },
+          "statistics": [
+            {
+              "type": "Shots on Goal",
+              "value": 4
+            },
+            {
+              "type": "Shots off Goal",
+              "value": 0
+            },
+            {
+              "type": "Total Shots",
+              "value": 6
+            },
+            {
+              "type": "Blocked Shots",
+              "value": 2
+            },
+            {
+              "type": "Shots insidebox",
+              "value": 3
+            },
+            {
+              "type": "Shots outsidebox",
+              "value": 3
+            },
+            {
+              "type": "Fouls",
+              "value": 9
+            },
+            {
+              "type": "Corner Kicks",
+              "value": 4
+            },
+            {
+              "type": "Offsides",
+              "value": 4
+            },
+            {
+              "type": "Ball Possession",
+              "value": "43%"
+            },
+            {
+              "type": "Yellow Cards",
+              "value": 2
+            },
+            {
+              "type": "Red Cards",
+              "value": null
+            },
+            {
+              "type": "Goalkeeper Saves",
+              "value": 2
+            },
+            {
+              "type": "Total passes",
+              "value": 396
+            },
+            {
+              "type": "Passes accurate",
+              "value": 307
+            },
+            {
+              "type": "Passes %",
+              "value": "78%"
+            },
+            {
+              "type": "expected_goals",
+              "value": "0.36"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "source": "api-football",
+    "endpoint": "/fixtures/statistics?fixture=868153",
+    "data": {
+      "get": "fixtures/statistics",
+      "parameters": {
+        "fixture": "868153"
+      },
+      "errors": [],
+      "results": 2,
+      "paging": {
+        "current": 1,
+        "total": 1
+      },
+      "response": [
+        {
+          "team": {
+            "id": 50,
+            "name": "Manchester City",
+            "logo": "https://media.api-sports.io/football/teams/50.png"
+          },
+          "statistics": [
+            {
+              "type": "Shots on Goal",
+              "value": 7
+            },
+            {
+              "type": "Shots off Goal",
+              "value": 5
+            },
+            {
+              "type": "Total Shots",
+              "value": 13
+            },
+            {
+              "type": "Blocked Shots",
+              "value": 1
+            },
+            {
+              "type": "Shots insidebox",
+              "value": 10
+            },
+            {
+              "type": "Shots outsidebox",
+              "value": 3
+            },
+            {
+              "type": "Fouls",
+              "value": 10
+            },
+            {
+              "type": "Corner Kicks",
+              "value": 5
+            },
+            {
+              "type": "Offsides",
+              "value": 1
+            },
+            {
+              "type": "Ball Possession",
+              "value": "55%"
+            },
+            {
+              "type": "Yellow Cards",
+              "value": 1
+            },
+            {
+              "type": "Red Cards",
+              "value": null
+            },
+            {
+              "type": "Goalkeeper Saves",
+              "value": 1
+            },
+            {
+              "type": "Total passes",
+              "value": 587
+            },
+            {
+              "type": "Passes accurate",
+              "value": 526
+            },
+            {
+              "type": "Passes %",
+              "value": "90%"
+            },
+            {
+              "type": "expected_goals",
+              "value": "2.78"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 39,
+            "name": "Wolves",
+            "logo": "https://media.api-sports.io/football/teams/39.png"
+          },
+          "statistics": [
+            {
+              "type": "Shots on Goal",
+              "value": 1
+            },
+            {
+              "type": "Shots off Goal",
+              "value": 5
+            },
+            {
+              "type": "Total Shots",
+              "value": 10
+            },
+            {
+              "type": "Blocked Shots",
+              "value": 4
+            },
+            {
+              "type": "Shots insidebox",
+              "value": 6
+            },
+            {
+              "type": "Shots outsidebox",
+              "value": 4
+            },
+            {
+              "type": "Fouls",
+              "value": 10
+            },
+            {
+              "type": "Corner Kicks",
+              "value": 7
+            },
+            {
+              "type": "Offsides",
+              "value": 0
+            },
+            {
+              "type": "Ball Possession",
+              "value": "45%"
+            },
+            {
+              "type": "Yellow Cards",
+              "value": 2
+            },
+            {
+              "type": "Red Cards",
+              "value": null
+            },
+            {
+              "type": "Goalkeeper Saves",
+              "value": 3
+            },
+            {
+              "type": "Total passes",
+              "value": 478
+            },
+            {
+              "type": "Passes accurate",
+              "value": 409
+            },
+            {
+              "type": "Passes %",
+              "value": "86%"
+            },
+            {
+              "type": "expected_goals",
+              "value": "0.79"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "source": "api-football",
+    "endpoint": "/fixtures/statistics?fixture=868299",
+    "data": {
+      "get": "fixtures/statistics",
+      "parameters": {
+        "fixture": "868299"
+      },
+      "errors": [],
+      "results": 2,
+      "paging": {
+        "current": 1,
+        "total": 1
+      },
+      "response": [
+        {
+          "team": {
+            "id": 49,
+            "name": "Chelsea",
+            "logo": "https://media.api-sports.io/football/teams/49.png"
+          },
+          "statistics": [
+            {
+              "type": "Shots on Goal",
+              "value": 6
+            },
+            {
+              "type": "Shots off Goal",
+              "value": 3
+            },
+            {
+              "type": "Total Shots",
+              "value": 14
+            },
+            {
+              "type": "Blocked Shots",
+              "value": 5
+            },
+            {
+              "type": "Shots insidebox",
+              "value": 8
+            },
+            {
+              "type": "Shots outsidebox",
+              "value": 6
+            },
+            {
+              "type": "Fouls",
+              "value": 13
+            },
+            {
+              "type": "Corner Kicks",
+              "value": 2
+            },
+            {
+              "type": "Offsides",
+              "value": 1
+            },
+            {
+              "type": "Ball Possession",
+              "value": "76%"
+            },
+            {
+              "type": "Yellow Cards",
+              "value": 3
+            },
+            {
+              "type": "Red Cards",
+              "value": null
+            },
+            {
+              "type": "Goalkeeper Saves",
+              "value": 0
+            },
+            {
+              "type": "Total passes",
+              "value": 708
+            },
+            {
+              "type": "Passes accurate",
+              "value": 631
+            },
+            {
+              "type": "Passes %",
+              "value": "89%"
+            },
+            {
+              "type": "expected_goals",
+              "value": "1.17"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 65,
+            "name": "Nottingham Forest",
+            "logo": "https://media.api-sports.io/football/teams/65.png"
+          },
+          "statistics": [
+            {
+              "type": "Shots on Goal",
+              "value": 2
+            },
+            {
+              "type": "Shots off Goal",
+              "value": 7
+            },
+            {
+              "type": "Total Shots",
+              "value": 11
+            },
+            {
+              "type": "Blocked Shots",
+              "value": 2
+            },
+            {
+              "type": "Shots insidebox",
+              "value": 10
+            },
+            {
+              "type": "Shots outsidebox",
+              "value": 1
+            },
+            {
+              "type": "Fouls",
+              "value": 15
+            },
+            {
+              "type": "Corner Kicks",
+              "value": 5
+            },
+            {
+              "type": "Offsides",
+              "value": 2
+            },
+            {
+              "type": "Ball Possession",
+              "value": "24%"
+            },
+            {
+              "type": "Yellow Cards",
+              "value": 1
+            },
+            {
+              "type": "Red Cards",
+              "value": null
+            },
+            {
+              "type": "Goalkeeper Saves",
+              "value": 4
+            },
+            {
+              "type": "Total passes",
+              "value": 217
+            },
+            {
+              "type": "Passes accurate",
+              "value": 132
+            },
+            {
+              "type": "Passes %",
+              "value": "61%"
+            },
+            {
+              "type": "expected_goals",
+              "value": "1.30"
+            }
+          ]
+        }
+      ]
+    }
   }
 ]

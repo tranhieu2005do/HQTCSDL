@@ -48,7 +48,7 @@ def extract_fixture_statistics() -> None:
     fixture_ids = load_fixture_ids()
     output_path = OUTPUT_DIR / "fixture_statistics.json"
 
-    max_requests = 100
+    max_requests = 6
     delay_seconds = 6
 
     print(
@@ -99,4 +99,4 @@ def extract_fixture_statistics() -> None:
 
 
 if __name__ == "__main__":
-    print(len(set(load_fixture_ids())))
+    print(len(load_fixture_ids()))
