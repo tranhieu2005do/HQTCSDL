@@ -48,7 +48,7 @@ def extract_fixture_players() -> None:
     fixture_ids = load_fixture_ids()
     output_path = OUTPUT_DIR / "fixture_players.json"
 
-    max_requests = 100
+    max_requests = 68
     delay_seconds = 6
 
     print(
