@@ -83,7 +83,7 @@ def extract_fixture_headtohead() -> None:
     pair_ids = load_remaining_pairs()
     output_path = OUTPUT_DIR / "fixture_headtohead.json"
 
-    max_requests = 100
+    max_requests = 25
     delay_seconds = 6
 
     print(
