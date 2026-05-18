@@ -280,8 +280,3 @@ python load/load_fixture_data.py
 
 ---
 
-# Author
-
-Do Tran Hieu
-
-Backend Developer | Data Engineering | Machine Learning
