@@ -1,0 +1,7 @@
+requests
+papermill
+jupyter
+ipykernel
+clickhouse-connect
+pandas
+numpy

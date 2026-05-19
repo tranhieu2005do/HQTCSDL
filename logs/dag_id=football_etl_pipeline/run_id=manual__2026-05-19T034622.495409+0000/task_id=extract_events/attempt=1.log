@@ -1,0 +1,48 @@
+[2026-05-19T03:46:29.835+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-19T03:46:29.854+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: football_etl_pipeline.extract_events manual__2026-05-19T03:46:22.495409+00:00 [queued]>
+[2026-05-19T03:46:29.861+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: football_etl_pipeline.extract_events manual__2026-05-19T03:46:22.495409+00:00 [queued]>
+[2026-05-19T03:46:29.861+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-05-19T03:46:29.873+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): extract_events> on 2026-05-19 03:46:22.495409+00:00
+[2026-05-19T03:46:29.882+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=128) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-19T03:46:29.888+0000] {standard_task_runner.py:63} INFO - Started process 130 to run task
+[2026-05-19T03:46:29.888+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'football_etl_pipeline', 'extract_events', 'manual__2026-05-19T03:46:22.495409+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/football_etl_dag.py', '--cfg-path', '/tmp/tmpcbyugdtj']
+[2026-05-19T03:46:29.895+0000] {standard_task_runner.py:91} INFO - Job 4: Subtask extract_events
+[2026-05-19T03:46:29.983+0000] {task_command.py:426} INFO - Running <TaskInstance: football_etl_pipeline.extract_events manual__2026-05-19T03:46:22.495409+00:00 [running]> on host 1fc74b92fe5a
+[2026-05-19T03:46:30.096+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='football_etl_pipeline' AIRFLOW_CTX_TASK_ID='extract_events' AIRFLOW_CTX_EXECUTION_DATE='2026-05-19T03:46:22.495409+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-19T03:46:22.495409+00:00'
+[2026-05-19T03:46:30.101+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-19T03:46:30.103+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-19T03:46:30.104+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'export PYTHONPATH=/opt/***/etl/extract:$PYTHONPATH && python /opt/***/etl/extract/extract_events.py']
+[2026-05-19T03:46:30.121+0000] {subprocess.py:86} INFO - Output:
+[2026-05-19T03:46:30.885+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-05-19T03:46:30.885+0000] {subprocess.py:93} INFO -   File "/opt/***/etl/extract/extract_events.py", line 103, in <module>
+[2026-05-19T03:46:30.887+0000] {subprocess.py:93} INFO -     extract_events()
+[2026-05-19T03:46:30.887+0000] {subprocess.py:93} INFO -   File "/opt/***/etl/extract/extract_events.py", line 67, in extract_events
+[2026-05-19T03:46:30.889+0000] {subprocess.py:93} INFO -     fixture_ids = load_fixture_ids()
+[2026-05-19T03:46:30.890+0000] {subprocess.py:93} INFO -                   ^^^^^^^^^^^^^^^^^^
+[2026-05-19T03:46:30.890+0000] {subprocess.py:93} INFO -   File "/opt/***/etl/extract/extract_events.py", line 12, in load_fixture_ids
+[2026-05-19T03:46:30.891+0000] {subprocess.py:93} INFO -     with open(OUTPUT_DIR / "fixtures.json", "r", encoding="utf-8") as f:
+[2026-05-19T03:46:30.892+0000] {subprocess.py:93} INFO -          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-19T03:46:30.892+0000] {subprocess.py:93} INFO - FileNotFoundError: [Errno 2] No such file or directory: '/opt/***/etl/output/fixtures.json'
+[2026-05-19T03:46:30.909+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-05-19T03:46:30.911+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-19T03:46:30.923+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-05-19T03:46:30.930+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=football_etl_pipeline, task_id=extract_events, run_id=manual__2026-05-19T03:46:22.495409+00:00, execution_date=20260519T034622, start_date=20260519T034629, end_date=20260519T034630
+[2026-05-19T03:46:30.947+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 4 for task extract_events (Bash command failed. The command returned a non-zero exit code 1.; 130)
+[2026-05-19T03:46:30.962+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2026-05-19T03:46:30.992+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-19T03:46:30.997+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

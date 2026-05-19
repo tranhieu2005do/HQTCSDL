@@ -1,0 +1,25 @@
+[2026-05-19T05:11:04.991+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-19T05:11:05.017+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: football_etl_pipeline.extract_events manual__2026-05-19T05:10:47.754757+00:00 [queued]>
+[2026-05-19T05:11:05.025+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: football_etl_pipeline.extract_events manual__2026-05-19T05:10:47.754757+00:00 [queued]>
+[2026-05-19T05:11:05.026+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-05-19T05:11:05.041+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): extract_events> on 2026-05-19 05:10:47.754757+00:00
+[2026-05-19T05:11:05.051+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1434) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-19T05:11:05.052+0000] {standard_task_runner.py:63} INFO - Started process 1436 to run task
+[2026-05-19T05:11:05.053+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'football_etl_pipeline', 'extract_events', 'manual__2026-05-19T05:10:47.754757+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/football_etl_dag.py', '--cfg-path', '/tmp/tmpo69jenzh']
+[2026-05-19T05:11:05.056+0000] {standard_task_runner.py:91} INFO - Job 22: Subtask extract_events
+[2026-05-19T05:11:05.169+0000] {task_command.py:426} INFO - Running <TaskInstance: football_etl_pipeline.extract_events manual__2026-05-19T05:10:47.754757+00:00 [running]> on host 1fc74b92fe5a
+[2026-05-19T05:11:05.499+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='football_etl_pipeline' AIRFLOW_CTX_TASK_ID='extract_events' AIRFLOW_CTX_EXECUTION_DATE='2026-05-19T05:10:47.754757+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-19T05:10:47.754757+00:00'
+[2026-05-19T05:11:05.501+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-19T05:11:05.511+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-19T05:11:05.525+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'export PYTHONPATH=/opt/***/etl/extract:$PYTHONPATH && python /opt/***/etl/extract/extract_events.py']
+[2026-05-19T05:11:05.552+0000] {subprocess.py:86} INFO - Output:
+[2026-05-19T05:11:09.584+0000] {subprocess.py:93} INFO - Need to process 0 new fixtures
+[2026-05-19T05:11:09.598+0000] {subprocess.py:93} INFO - Done. Appended 0 records to /opt/***/etl/output/events.json
+[2026-05-19T05:11:09.663+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-05-19T05:11:09.679+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-19T05:11:10.239+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=football_etl_pipeline, task_id=extract_events, run_id=manual__2026-05-19T05:10:47.754757+00:00, execution_date=20260519T051047, start_date=20260519T051105, end_date=20260519T051110
+[2026-05-19T05:11:10.268+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-05-19T05:11:10.288+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-19T05:11:10.294+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

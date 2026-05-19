@@ -1,0 +1,1 @@
+[2026-05-19T04:35:10.668+0000] {task_context_logger.py:104} ERROR - Executor reports task instance <TaskInstance: football_etl_pipeline.transform_events manual__2026-05-19T04:25:28.129250+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
