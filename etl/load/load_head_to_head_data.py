@@ -21,7 +21,7 @@ def parse_date(value: str | None) -> date | None:
 
 def load_head_to_head_json() -> List[dict]:
 
-    base_dir = Path(__file__).resolve().parent.parent
+    base_dir = Path(__file__).resolve().parent.parent.parent
     path = base_dir / "database" / "head_to_head.json"
 
     if not path.exists():

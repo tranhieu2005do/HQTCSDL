@@ -31,7 +31,7 @@ def parse_float(value: str | None) -> float:
 
 def load_fixture_statistics_json() -> List[dict]:
 
-    base_dir = Path(__file__).resolve().parent.parent
+    base_dir = Path(__file__).resolve().parent.parent.parent
     path = base_dir / "database" / "fixture_statistics.json"
 
     if not path.exists():

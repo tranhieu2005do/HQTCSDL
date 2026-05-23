@@ -9,7 +9,7 @@ from clickhouse_client import get_client
 
 def load_lineup_json() -> List[dict]:
 
-    base_dir = Path(__file__).resolve().parent.parent
+    base_dir = Path(__file__).resolve().parent.parent.parent
     path = base_dir / "database" / "lineups.json"
 
     if not path.exists():

@@ -9,7 +9,7 @@ from clickhouse_client import get_client
 
 def load_card_event_json() -> List[dict]:
 
-    base_dir = Path(__file__).resolve().parent.parent
+    base_dir = Path(__file__).resolve().parent.parent.parent
     path = base_dir / "database" / "card_events.json"
 
     if not path.exists():
