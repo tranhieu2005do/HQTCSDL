@@ -10,3 +10,19 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+
+# Airflow Logs
+airflow/logs/
+
+# ETL Raw Output
+etl/output/
+
+# Environment Variables
+.env
+.env.*
