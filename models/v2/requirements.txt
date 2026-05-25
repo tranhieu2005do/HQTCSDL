@@ -1,0 +1,27 @@
+# Football Score Prediction System Requirements
+
+# Data Processing
+pandas>=1.5.0
+numpy>=1.23.0
+
+# Machine Learning
+scikit-learn>=1.2.0
+xgboost>=1.7.0
+
+# Hyperparameter Tuning
+optuna>=3.0.0
+
+# Progress Bars
+tqdm>=4.65.0
+
+# Optional: For web API deployment
+# flask>=2.3.0
+
+# Optional: For data analysis
+# matplotlib>=3.7.0
+# seaborn>=0.12.0
+# plotly>=5.14.0
+
+# Optional: For notebook support
+# jupyter>=1.0.0
+# ipython>=8.10.0
