@@ -1,0 +1,1073 @@
+2026-05-25 09:54:11,913 - __main__ - INFO - ======================================================================
+2026-05-25 09:54:11,914 - __main__ - INFO - Starting model training
+2026-05-25 09:54:11,914 - __main__ - INFO - ======================================================================
+2026-05-25 09:54:11,914 - data_loader - INFO - DataLoader initialized
+2026-05-25 09:54:11,939 - data_loader - INFO - Loaded 380 fixtures
+2026-05-25 09:54:11,960 - data_loader - INFO - Loaded 4325 head-to-head records
+2026-05-25 09:54:11,960 - feature_engineering - INFO - FeatureEngineer initialized
+2026-05-25 09:54:11,960 - __main__ - INFO - ModelTrainer initialized
+2026-05-25 09:54:11,960 - __main__ - INFO - Preparing training data...
+2026-05-25 09:54:11,960 - feature_engineering - INFO - Building training data...
+2026-05-25 09:54:11,968 - feature_engineering - WARNING - No history before 2022-08-05 00:00:00
+2026-05-25 09:54:11,972 - feature_engineering - WARNING - Error processing match 1: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,973 - feature_engineering - WARNING - Error processing match 2: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,973 - feature_engineering - WARNING - Error processing match 3: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,974 - feature_engineering - WARNING - Error processing match 4: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,975 - feature_engineering - WARNING - Error processing match 5: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,976 - feature_engineering - WARNING - Error processing match 6: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,976 - feature_engineering - WARNING - Error processing match 7: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,977 - feature_engineering - WARNING - Error processing match 8: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,977 - feature_engineering - WARNING - Error processing match 9: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,979 - feature_engineering - WARNING - Error processing match 10: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,980 - feature_engineering - WARNING - Error processing match 11: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,981 - feature_engineering - WARNING - Error processing match 12: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,981 - feature_engineering - WARNING - Error processing match 13: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,982 - feature_engineering - WARNING - Error processing match 14: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,983 - feature_engineering - WARNING - Error processing match 15: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,984 - feature_engineering - WARNING - Error processing match 16: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,985 - feature_engineering - WARNING - Error processing match 17: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,985 - feature_engineering - WARNING - Error processing match 18: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,986 - feature_engineering - WARNING - Error processing match 19: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,987 - feature_engineering - WARNING - Error processing match 20: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,988 - feature_engineering - WARNING - Error processing match 21: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,989 - feature_engineering - WARNING - Error processing match 22: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,989 - feature_engineering - WARNING - Error processing match 23: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,991 - feature_engineering - WARNING - Error processing match 24: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,991 - feature_engineering - WARNING - Error processing match 25: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,992 - feature_engineering - WARNING - Error processing match 26: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,992 - feature_engineering - WARNING - Error processing match 27: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,994 - feature_engineering - WARNING - Error processing match 28: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,998 - feature_engineering - WARNING - Error processing match 29: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:11,999 - feature_engineering - WARNING - Error processing match 30: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,000 - feature_engineering - WARNING - Error processing match 31: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,001 - feature_engineering - WARNING - Error processing match 32: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,002 - feature_engineering - WARNING - Error processing match 33: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,002 - feature_engineering - WARNING - Error processing match 34: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,003 - feature_engineering - WARNING - Error processing match 35: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,004 - feature_engineering - WARNING - Error processing match 36: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,005 - feature_engineering - WARNING - Error processing match 37: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,006 - feature_engineering - WARNING - Error processing match 38: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,007 - feature_engineering - WARNING - Error processing match 39: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,009 - feature_engineering - WARNING - Error processing match 40: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,010 - feature_engineering - WARNING - Error processing match 41: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,010 - feature_engineering - WARNING - Error processing match 42: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,011 - feature_engineering - WARNING - Error processing match 43: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,012 - feature_engineering - WARNING - Error processing match 44: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,014 - feature_engineering - WARNING - Error processing match 45: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,015 - feature_engineering - WARNING - Error processing match 46: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,016 - feature_engineering - WARNING - Error processing match 47: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,016 - feature_engineering - WARNING - Error processing match 48: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,017 - feature_engineering - WARNING - Error processing match 49: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,018 - feature_engineering - WARNING - Error processing match 50: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,019 - feature_engineering - WARNING - Error processing match 51: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,020 - feature_engineering - WARNING - Error processing match 52: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,020 - feature_engineering - WARNING - Error processing match 53: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,022 - feature_engineering - WARNING - Error processing match 54: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,023 - feature_engineering - WARNING - Error processing match 55: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,024 - feature_engineering - WARNING - Error processing match 56: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,024 - feature_engineering - WARNING - Error processing match 57: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,026 - feature_engineering - WARNING - Error processing match 58: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,027 - feature_engineering - WARNING - Error processing match 59: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,027 - feature_engineering - WARNING - Error processing match 60: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,028 - feature_engineering - WARNING - Error processing match 61: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,029 - feature_engineering - WARNING - Error processing match 62: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,030 - feature_engineering - WARNING - Error processing match 63: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,031 - feature_engineering - WARNING - Error processing match 64: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,032 - feature_engineering - WARNING - Error processing match 65: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,032 - feature_engineering - WARNING - Error processing match 66: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,033 - feature_engineering - WARNING - Error processing match 67: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,034 - feature_engineering - WARNING - Error processing match 68: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,035 - feature_engineering - WARNING - Error processing match 69: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,036 - feature_engineering - WARNING - Error processing match 70: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,037 - feature_engineering - WARNING - Error processing match 71: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,037 - feature_engineering - WARNING - Error processing match 72: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,038 - feature_engineering - WARNING - Error processing match 73: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,039 - feature_engineering - WARNING - Error processing match 74: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,041 - feature_engineering - WARNING - Error processing match 75: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,041 - feature_engineering - WARNING - Error processing match 76: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,043 - feature_engineering - WARNING - Error processing match 77: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,043 - feature_engineering - WARNING - Error processing match 78: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,044 - feature_engineering - WARNING - Error processing match 79: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,046 - feature_engineering - WARNING - Error processing match 80: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,047 - feature_engineering - WARNING - Error processing match 81: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,048 - feature_engineering - WARNING - Error processing match 82: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,049 - feature_engineering - WARNING - Error processing match 83: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,050 - feature_engineering - WARNING - Error processing match 84: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,051 - feature_engineering - WARNING - Error processing match 85: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,053 - feature_engineering - WARNING - Error processing match 86: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,053 - feature_engineering - WARNING - Error processing match 87: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,054 - feature_engineering - WARNING - Error processing match 88: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,055 - feature_engineering - WARNING - Error processing match 89: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,056 - feature_engineering - WARNING - Error processing match 90: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,058 - feature_engineering - WARNING - Error processing match 91: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,058 - feature_engineering - WARNING - Error processing match 92: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,060 - feature_engineering - WARNING - Error processing match 93: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,061 - feature_engineering - WARNING - Error processing match 94: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,062 - feature_engineering - WARNING - Error processing match 95: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,063 - feature_engineering - WARNING - Error processing match 96: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,064 - feature_engineering - WARNING - Error processing match 97: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,066 - feature_engineering - WARNING - Error processing match 98: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,067 - feature_engineering - WARNING - Error processing match 99: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,069 - feature_engineering - WARNING - Error processing match 100: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,070 - feature_engineering - WARNING - Error processing match 101: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,070 - feature_engineering - WARNING - Error processing match 102: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,071 - feature_engineering - WARNING - Error processing match 103: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,071 - feature_engineering - WARNING - Error processing match 104: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,073 - feature_engineering - WARNING - Error processing match 105: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,074 - feature_engineering - WARNING - Error processing match 106: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,074 - feature_engineering - WARNING - Error processing match 107: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,077 - feature_engineering - WARNING - Error processing match 108: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,078 - feature_engineering - WARNING - Error processing match 109: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,080 - feature_engineering - WARNING - Error processing match 110: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,081 - feature_engineering - WARNING - Error processing match 111: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,082 - feature_engineering - WARNING - Error processing match 112: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,083 - feature_engineering - WARNING - Error processing match 113: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,083 - feature_engineering - WARNING - Error processing match 114: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,085 - feature_engineering - WARNING - Error processing match 115: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,086 - feature_engineering - WARNING - Error processing match 116: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,087 - feature_engineering - WARNING - Error processing match 117: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,088 - feature_engineering - WARNING - Error processing match 118: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,089 - feature_engineering - WARNING - Error processing match 119: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,090 - feature_engineering - WARNING - Error processing match 120: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,091 - feature_engineering - WARNING - Error processing match 121: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,093 - feature_engineering - WARNING - Error processing match 122: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,094 - feature_engineering - WARNING - Error processing match 123: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,095 - feature_engineering - WARNING - Error processing match 124: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,096 - feature_engineering - WARNING - Error processing match 125: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,097 - feature_engineering - WARNING - Error processing match 126: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,098 - feature_engineering - WARNING - Error processing match 127: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,098 - feature_engineering - WARNING - Error processing match 128: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,099 - feature_engineering - WARNING - Error processing match 129: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,100 - feature_engineering - WARNING - Error processing match 130: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,101 - feature_engineering - WARNING - Error processing match 131: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,102 - feature_engineering - WARNING - Error processing match 132: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,103 - feature_engineering - WARNING - Error processing match 133: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,104 - feature_engineering - WARNING - Error processing match 134: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,105 - feature_engineering - WARNING - Error processing match 135: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,106 - feature_engineering - WARNING - Error processing match 136: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,108 - feature_engineering - WARNING - Error processing match 137: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,109 - feature_engineering - WARNING - Error processing match 138: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,110 - feature_engineering - WARNING - Error processing match 139: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,111 - feature_engineering - WARNING - Error processing match 140: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,112 - feature_engineering - WARNING - Error processing match 141: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,114 - feature_engineering - WARNING - Error processing match 142: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,115 - feature_engineering - WARNING - Error processing match 143: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,116 - feature_engineering - WARNING - Error processing match 144: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,117 - feature_engineering - WARNING - Error processing match 145: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,118 - feature_engineering - WARNING - Error processing match 146: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,118 - feature_engineering - WARNING - Error processing match 147: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,120 - feature_engineering - WARNING - Error processing match 148: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,121 - feature_engineering - WARNING - Error processing match 149: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,122 - feature_engineering - WARNING - Error processing match 150: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,122 - feature_engineering - WARNING - Error processing match 151: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,122 - feature_engineering - WARNING - Error processing match 152: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,122 - feature_engineering - WARNING - Error processing match 153: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,122 - feature_engineering - WARNING - Error processing match 154: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,125 - feature_engineering - WARNING - Error processing match 155: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,126 - feature_engineering - WARNING - Error processing match 156: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,128 - feature_engineering - WARNING - Error processing match 157: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,129 - feature_engineering - WARNING - Error processing match 158: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,129 - feature_engineering - WARNING - Error processing match 159: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,130 - feature_engineering - WARNING - Error processing match 160: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,130 - feature_engineering - WARNING - Error processing match 161: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,131 - feature_engineering - WARNING - Error processing match 162: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,133 - feature_engineering - WARNING - Error processing match 163: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,133 - feature_engineering - WARNING - Error processing match 164: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,134 - feature_engineering - WARNING - Error processing match 165: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,135 - feature_engineering - WARNING - Error processing match 166: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,136 - feature_engineering - WARNING - Error processing match 167: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,137 - feature_engineering - WARNING - Error processing match 168: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,137 - feature_engineering - WARNING - Error processing match 169: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,138 - feature_engineering - WARNING - Error processing match 170: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,139 - feature_engineering - WARNING - Error processing match 171: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,140 - feature_engineering - WARNING - Error processing match 172: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,140 - feature_engineering - WARNING - Error processing match 173: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,141 - feature_engineering - WARNING - Error processing match 174: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,142 - feature_engineering - WARNING - Error processing match 175: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,142 - feature_engineering - WARNING - Error processing match 176: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,144 - feature_engineering - WARNING - Error processing match 177: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,144 - feature_engineering - WARNING - Error processing match 178: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,145 - feature_engineering - WARNING - Error processing match 179: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,146 - feature_engineering - WARNING - Error processing match 180: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,146 - feature_engineering - WARNING - Error processing match 181: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,147 - feature_engineering - WARNING - Error processing match 182: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,148 - feature_engineering - WARNING - Error processing match 183: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,149 - feature_engineering - WARNING - Error processing match 184: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,150 - feature_engineering - WARNING - Error processing match 185: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,151 - feature_engineering - WARNING - Error processing match 186: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,151 - feature_engineering - WARNING - Error processing match 187: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,152 - feature_engineering - WARNING - Error processing match 188: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,153 - feature_engineering - WARNING - Error processing match 189: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,153 - feature_engineering - WARNING - Error processing match 190: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,154 - feature_engineering - WARNING - Error processing match 191: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,154 - feature_engineering - WARNING - Error processing match 192: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,154 - feature_engineering - WARNING - Error processing match 193: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,156 - feature_engineering - WARNING - Error processing match 194: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,156 - feature_engineering - WARNING - Error processing match 195: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,156 - feature_engineering - WARNING - Error processing match 196: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,159 - feature_engineering - WARNING - Error processing match 197: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,160 - feature_engineering - WARNING - Error processing match 198: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,160 - feature_engineering - WARNING - Error processing match 199: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,161 - feature_engineering - WARNING - Error processing match 200: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,162 - feature_engineering - WARNING - Error processing match 201: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,163 - feature_engineering - WARNING - Error processing match 202: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,163 - feature_engineering - WARNING - Error processing match 203: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,164 - feature_engineering - WARNING - Error processing match 204: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,165 - feature_engineering - WARNING - Error processing match 205: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,166 - feature_engineering - WARNING - Error processing match 206: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,167 - feature_engineering - WARNING - Error processing match 207: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,168 - feature_engineering - WARNING - Error processing match 208: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,169 - feature_engineering - WARNING - Error processing match 209: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,170 - feature_engineering - WARNING - Error processing match 210: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,170 - feature_engineering - WARNING - Error processing match 211: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,171 - feature_engineering - WARNING - Error processing match 212: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,172 - feature_engineering - WARNING - Error processing match 213: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,172 - feature_engineering - WARNING - Error processing match 214: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,172 - feature_engineering - WARNING - Error processing match 215: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,174 - feature_engineering - WARNING - Error processing match 216: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,175 - feature_engineering - WARNING - Error processing match 217: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,176 - feature_engineering - WARNING - Error processing match 218: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,176 - feature_engineering - WARNING - Error processing match 219: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,177 - feature_engineering - WARNING - Error processing match 220: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,178 - feature_engineering - WARNING - Error processing match 221: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,179 - feature_engineering - WARNING - Error processing match 222: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,179 - feature_engineering - WARNING - Error processing match 223: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,180 - feature_engineering - WARNING - Error processing match 224: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,181 - feature_engineering - WARNING - Error processing match 225: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,182 - feature_engineering - WARNING - Error processing match 226: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,183 - feature_engineering - WARNING - Error processing match 227: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,184 - feature_engineering - WARNING - Error processing match 228: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,185 - feature_engineering - WARNING - Error processing match 229: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,185 - feature_engineering - WARNING - Error processing match 230: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,186 - feature_engineering - WARNING - Error processing match 231: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,186 - feature_engineering - WARNING - Error processing match 232: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,187 - feature_engineering - WARNING - Error processing match 233: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,187 - feature_engineering - WARNING - Error processing match 234: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,187 - feature_engineering - WARNING - Error processing match 235: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,187 - feature_engineering - WARNING - Error processing match 236: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,187 - feature_engineering - WARNING - Error processing match 237: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,191 - feature_engineering - WARNING - Error processing match 238: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,192 - feature_engineering - WARNING - Error processing match 239: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,193 - feature_engineering - WARNING - Error processing match 240: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,193 - feature_engineering - WARNING - Error processing match 241: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,194 - feature_engineering - WARNING - Error processing match 242: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,195 - feature_engineering - WARNING - Error processing match 243: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,195 - feature_engineering - WARNING - Error processing match 244: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,196 - feature_engineering - WARNING - Error processing match 245: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,197 - feature_engineering - WARNING - Error processing match 246: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,198 - feature_engineering - WARNING - Error processing match 247: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,199 - feature_engineering - WARNING - Error processing match 248: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,199 - feature_engineering - WARNING - Error processing match 249: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,199 - feature_engineering - WARNING - Error processing match 250: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,201 - feature_engineering - WARNING - Error processing match 251: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,202 - feature_engineering - WARNING - Error processing match 252: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,202 - feature_engineering - WARNING - Error processing match 253: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,204 - feature_engineering - WARNING - Error processing match 254: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,204 - feature_engineering - WARNING - Error processing match 255: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,205 - feature_engineering - WARNING - Error processing match 256: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,205 - feature_engineering - WARNING - Error processing match 257: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,205 - feature_engineering - WARNING - Error processing match 258: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,205 - feature_engineering - WARNING - Error processing match 259: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,207 - feature_engineering - WARNING - Error processing match 260: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,208 - feature_engineering - WARNING - Error processing match 261: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,208 - feature_engineering - WARNING - Error processing match 262: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,209 - feature_engineering - WARNING - Error processing match 263: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,210 - feature_engineering - WARNING - Error processing match 264: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,211 - feature_engineering - WARNING - Error processing match 265: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,212 - feature_engineering - WARNING - Error processing match 266: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,212 - feature_engineering - WARNING - Error processing match 267: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,213 - feature_engineering - WARNING - Error processing match 268: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,214 - feature_engineering - WARNING - Error processing match 269: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,215 - feature_engineering - WARNING - Error processing match 270: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,215 - feature_engineering - WARNING - Error processing match 271: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,215 - feature_engineering - WARNING - Error processing match 272: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,215 - feature_engineering - WARNING - Error processing match 273: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,218 - feature_engineering - WARNING - Error processing match 274: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,218 - feature_engineering - WARNING - Error processing match 275: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,220 - feature_engineering - WARNING - Error processing match 276: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,220 - feature_engineering - WARNING - Error processing match 277: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,221 - feature_engineering - WARNING - Error processing match 278: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,222 - feature_engineering - WARNING - Error processing match 279: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,223 - feature_engineering - WARNING - Error processing match 280: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,223 - feature_engineering - WARNING - Error processing match 281: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,224 - feature_engineering - WARNING - Error processing match 282: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,224 - feature_engineering - WARNING - Error processing match 283: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,225 - feature_engineering - WARNING - Error processing match 284: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,226 - feature_engineering - WARNING - Error processing match 285: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,226 - feature_engineering - WARNING - Error processing match 286: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,227 - feature_engineering - WARNING - Error processing match 287: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,227 - feature_engineering - WARNING - Error processing match 288: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,229 - feature_engineering - WARNING - Error processing match 289: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,230 - feature_engineering - WARNING - Error processing match 290: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,230 - feature_engineering - WARNING - Error processing match 291: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,232 - feature_engineering - WARNING - Error processing match 292: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,233 - feature_engineering - WARNING - Error processing match 293: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,233 - feature_engineering - WARNING - Error processing match 294: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,234 - feature_engineering - WARNING - Error processing match 295: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,235 - feature_engineering - WARNING - Error processing match 296: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,236 - feature_engineering - WARNING - Error processing match 297: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,237 - feature_engineering - WARNING - Error processing match 298: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,237 - feature_engineering - WARNING - Error processing match 299: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,237 - feature_engineering - WARNING - Error processing match 300: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,239 - feature_engineering - WARNING - Error processing match 301: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,239 - feature_engineering - WARNING - Error processing match 302: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,239 - feature_engineering - WARNING - Error processing match 303: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,242 - feature_engineering - WARNING - Error processing match 304: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,242 - feature_engineering - WARNING - Error processing match 305: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,243 - feature_engineering - WARNING - Error processing match 306: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,244 - feature_engineering - WARNING - Error processing match 307: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,244 - feature_engineering - WARNING - Error processing match 308: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,245 - feature_engineering - WARNING - Error processing match 309: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,246 - feature_engineering - WARNING - Error processing match 310: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,247 - feature_engineering - WARNING - Error processing match 311: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,247 - feature_engineering - WARNING - Error processing match 312: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,248 - feature_engineering - WARNING - Error processing match 313: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,249 - feature_engineering - WARNING - Error processing match 314: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,250 - feature_engineering - WARNING - Error processing match 315: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,251 - feature_engineering - WARNING - Error processing match 316: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,251 - feature_engineering - WARNING - Error processing match 317: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,252 - feature_engineering - WARNING - Error processing match 318: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,253 - feature_engineering - WARNING - Error processing match 319: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,253 - feature_engineering - WARNING - Error processing match 320: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,254 - feature_engineering - WARNING - Error processing match 321: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,254 - feature_engineering - WARNING - Error processing match 322: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,254 - feature_engineering - WARNING - Error processing match 323: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,254 - feature_engineering - WARNING - Error processing match 324: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,254 - feature_engineering - WARNING - Error processing match 325: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,254 - feature_engineering - WARNING - Error processing match 326: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,254 - feature_engineering - WARNING - Error processing match 327: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,254 - feature_engineering - WARNING - Error processing match 328: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,260 - feature_engineering - WARNING - Error processing match 329: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,260 - feature_engineering - WARNING - Error processing match 330: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,261 - feature_engineering - WARNING - Error processing match 331: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,262 - feature_engineering - WARNING - Error processing match 332: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,263 - feature_engineering - WARNING - Error processing match 333: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,264 - feature_engineering - WARNING - Error processing match 334: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,265 - feature_engineering - WARNING - Error processing match 335: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,265 - feature_engineering - WARNING - Error processing match 336: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,267 - feature_engineering - WARNING - Error processing match 337: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,268 - feature_engineering - WARNING - Error processing match 338: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,268 - feature_engineering - WARNING - Error processing match 339: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,269 - feature_engineering - WARNING - Error processing match 340: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,269 - feature_engineering - WARNING - Error processing match 341: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,270 - feature_engineering - WARNING - Error processing match 342: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,271 - feature_engineering - WARNING - Error processing match 343: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,272 - feature_engineering - WARNING - Error processing match 344: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,273 - feature_engineering - WARNING - Error processing match 345: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,273 - feature_engineering - WARNING - Error processing match 346: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,274 - feature_engineering - WARNING - Error processing match 347: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,275 - feature_engineering - WARNING - Error processing match 348: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,276 - feature_engineering - WARNING - Error processing match 349: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,276 - feature_engineering - WARNING - Error processing match 350: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,277 - feature_engineering - WARNING - Error processing match 351: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,278 - feature_engineering - WARNING - Error processing match 352: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,279 - feature_engineering - WARNING - Error processing match 353: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,279 - feature_engineering - WARNING - Error processing match 354: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,280 - feature_engineering - WARNING - Error processing match 355: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,281 - feature_engineering - WARNING - Error processing match 356: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,282 - feature_engineering - WARNING - Error processing match 357: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,283 - feature_engineering - WARNING - Error processing match 358: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,284 - feature_engineering - WARNING - Error processing match 359: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,285 - feature_engineering - WARNING - Error processing match 360: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,285 - feature_engineering - WARNING - Error processing match 361: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,286 - feature_engineering - WARNING - Error processing match 362: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,287 - feature_engineering - WARNING - Error processing match 363: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,288 - feature_engineering - WARNING - Error processing match 364: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,288 - feature_engineering - WARNING - Error processing match 365: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,289 - feature_engineering - WARNING - Error processing match 366: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,290 - feature_engineering - WARNING - Error processing match 367: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,291 - feature_engineering - WARNING - Error processing match 368: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,291 - feature_engineering - WARNING - Error processing match 369: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,292 - feature_engineering - WARNING - Error processing match 370: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,293 - feature_engineering - WARNING - Error processing match 371: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,293 - feature_engineering - WARNING - Error processing match 372: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,294 - feature_engineering - WARNING - Error processing match 373: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,295 - feature_engineering - WARNING - Error processing match 374: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,295 - feature_engineering - WARNING - Error processing match 375: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,296 - feature_engineering - WARNING - Error processing match 376: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,297 - feature_engineering - WARNING - Error processing match 377: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,298 - feature_engineering - WARNING - Error processing match 378: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,299 - feature_engineering - WARNING - Error processing match 379: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:54:12,301 - feature_engineering - INFO - Built training data: 1 samples, 60 features
+2026-05-25 09:54:12,301 - __main__ - INFO - Training data shape: (1, 60)
+2026-05-25 09:54:12,301 - __main__ - INFO - Feature columns: 60
+2026-05-25 09:54:12,301 - __main__ - INFO - Preprocessing features...
+2026-05-25 09:54:12,301 - __main__ - INFO - Features preprocessed: (1, 60)
+2026-05-25 09:54:12,301 - __main__ - INFO - Train/Test split: 0/1
+2026-05-25 09:54:12,301 - __main__ - INFO - 
+============================================================
+2026-05-25 09:54:12,301 - __main__ - INFO - Training model for home_goals
+2026-05-25 09:54:12,310 - __main__ - INFO - ============================================================
+2026-05-25 09:54:12,310 - __main__ - INFO - Starting hyperparameter optimization for home_goals...
+2026-05-25 09:54:12,422 - __main__ - ERROR - Training failed: Cannot have number of folds=4 greater than the number of samples=0.
+Traceback (most recent call last):
+  File "c:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\train_model.py", line 383, in main
+    metrics = trainer.train(optimize_hyperparams=True)
+  File "c:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\train_model.py", line 236, in train
+    best_params = self.hyperparameter_optimization(
+  File "c:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\train_model.py", line 182, in hyperparameter_optimization
+    study.optimize(objective, n_trials=n_trials, show_progress_bar=True)
+  File "C:\Users\7610\AppData\Local\Programs\Python\Python310\lib\site-packages\optuna\study\study.py", line 490, in optimize
+    _optimize(
+  File "C:\Users\7610\AppData\Local\Programs\Python\Python310\lib\site-packages\optuna\study\_optimize.py", line 68, in _optimize
+    _optimize_sequential(
+  File "C:\Users\7610\AppData\Local\Programs\Python\Python310\lib\site-packages\optuna\study\_optimize.py", line 165, in _optimize_sequential
+    frozen_trial_id = _run_trial(study, func, catch)
+  File "C:\Users\7610\AppData\Local\Programs\Python\Python310\lib\site-packages\optuna\study\_optimize.py", line 263, in _run_trial
+    raise func_err
+  File "C:\Users\7610\AppData\Local\Programs\Python\Python310\lib\site-packages\optuna\study\_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+  File "c:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\train_model.py", line 169, in objective
+    cv_scores = cross_val_score(
+  File "C:\Users\7610\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\7610\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File "C:\Users\7610\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\7610\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 399, in cross_validate
+    results = parallel(
+  File "C:\Users\7610\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\parallel.py", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File "C:\Users\7610\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 2072, in __call__
+    return output if self.return_generator else list(output)
+  File "C:\Users\7610\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File "C:\Users\7610\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 1784, in _retrieve
+    self._raise_error_fast()
+  File "C:\Users\7610\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "C:\Users\7610\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 758, in get_result
+    return self._return_or_raise()
+  File "C:\Users\7610\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 773, in _return_or_raise
+    raise self._result
+  File "C:\Users\7610\AppData\Roaming\Python\Python310\site-packages\joblib\parallel.py", line 1493, in dispatch_one_batch
+    islice = list(itertools.islice(iterator, big_batch_size))
+  File "C:\Users\7610\AppData\Roaming\Python\Python310\site-packages\sklearn\utils\parallel.py", line 74, in <genexpr>
+    iterable_with_config_and_warning_filters = (
+  File "C:\Users\7610\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_validation.py", line 399, in <genexpr>
+    results = parallel(
+  File "C:\Users\7610\AppData\Roaming\Python\Python310\site-packages\sklearn\model_selection\_split.py", line 1289, in _split
+    raise ValueError(
+ValueError: Cannot have number of folds=4 greater than the number of samples=0.
+2026-05-25 09:56:40,112 - __main__ - INFO - ======================================================================
+2026-05-25 09:56:40,114 - __main__ - INFO - Starting model training
+2026-05-25 09:56:40,114 - __main__ - INFO - ======================================================================
+2026-05-25 09:56:40,114 - data_loader - INFO - DataLoader initialized
+2026-05-25 09:56:40,120 - data_loader - INFO - Loaded 380 fixtures
+2026-05-25 09:56:40,140 - data_loader - INFO - Loaded 4325 head-to-head records
+2026-05-25 09:56:40,140 - feature_engineering - INFO - FeatureEngineer initialized
+2026-05-25 09:56:40,140 - __main__ - INFO - ModelTrainer initialized
+2026-05-25 09:56:40,142 - __main__ - INFO - Preparing training data...
+2026-05-25 09:56:40,142 - feature_engineering - INFO - Building training data...
+2026-05-25 09:56:40,142 - feature_engineering - WARNING - No history before 2022-08-05 00:00:00
+2026-05-25 09:56:40,148 - feature_engineering - WARNING - Error processing match 1: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,148 - feature_engineering - WARNING - Error processing match 2: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,150 - feature_engineering - WARNING - Error processing match 3: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,151 - feature_engineering - WARNING - Error processing match 4: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,151 - feature_engineering - WARNING - Error processing match 5: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,152 - feature_engineering - WARNING - Error processing match 6: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,153 - feature_engineering - WARNING - Error processing match 7: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,153 - feature_engineering - WARNING - Error processing match 8: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,153 - feature_engineering - WARNING - Error processing match 9: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,153 - feature_engineering - WARNING - Error processing match 10: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,156 - feature_engineering - WARNING - Error processing match 11: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,157 - feature_engineering - WARNING - Error processing match 12: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,157 - feature_engineering - WARNING - Error processing match 13: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,158 - feature_engineering - WARNING - Error processing match 14: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,159 - feature_engineering - WARNING - Error processing match 15: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,160 - feature_engineering - WARNING - Error processing match 16: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,161 - feature_engineering - WARNING - Error processing match 17: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,161 - feature_engineering - WARNING - Error processing match 18: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,162 - feature_engineering - WARNING - Error processing match 19: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,162 - feature_engineering - WARNING - Error processing match 20: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,163 - feature_engineering - WARNING - Error processing match 21: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,164 - feature_engineering - WARNING - Error processing match 22: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,165 - feature_engineering - WARNING - Error processing match 23: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,166 - feature_engineering - WARNING - Error processing match 24: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,166 - feature_engineering - WARNING - Error processing match 25: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,167 - feature_engineering - WARNING - Error processing match 26: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,168 - feature_engineering - WARNING - Error processing match 27: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,169 - feature_engineering - WARNING - Error processing match 28: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,170 - feature_engineering - WARNING - Error processing match 29: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,171 - feature_engineering - WARNING - Error processing match 30: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,171 - feature_engineering - WARNING - Error processing match 31: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,172 - feature_engineering - WARNING - Error processing match 32: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,173 - feature_engineering - WARNING - Error processing match 33: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,174 - feature_engineering - WARNING - Error processing match 34: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,175 - feature_engineering - WARNING - Error processing match 35: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,176 - feature_engineering - WARNING - Error processing match 36: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,177 - feature_engineering - WARNING - Error processing match 37: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,178 - feature_engineering - WARNING - Error processing match 38: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,179 - feature_engineering - WARNING - Error processing match 39: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,180 - feature_engineering - WARNING - Error processing match 40: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,181 - feature_engineering - WARNING - Error processing match 41: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,181 - feature_engineering - WARNING - Error processing match 42: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,183 - feature_engineering - WARNING - Error processing match 43: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,184 - feature_engineering - WARNING - Error processing match 44: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,185 - feature_engineering - WARNING - Error processing match 45: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,187 - feature_engineering - WARNING - Error processing match 46: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,187 - feature_engineering - WARNING - Error processing match 47: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,189 - feature_engineering - WARNING - Error processing match 48: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,190 - feature_engineering - WARNING - Error processing match 49: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,191 - feature_engineering - WARNING - Error processing match 50: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,192 - feature_engineering - WARNING - Error processing match 51: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,193 - feature_engineering - WARNING - Error processing match 52: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,194 - feature_engineering - WARNING - Error processing match 53: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,194 - feature_engineering - WARNING - Error processing match 54: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,194 - feature_engineering - WARNING - Error processing match 55: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,194 - feature_engineering - WARNING - Error processing match 56: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,194 - feature_engineering - WARNING - Error processing match 57: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,194 - feature_engineering - WARNING - Error processing match 58: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,200 - feature_engineering - WARNING - Error processing match 59: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,200 - feature_engineering - WARNING - Error processing match 60: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,201 - feature_engineering - WARNING - Error processing match 61: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,202 - feature_engineering - WARNING - Error processing match 62: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,203 - feature_engineering - WARNING - Error processing match 63: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,204 - feature_engineering - WARNING - Error processing match 64: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,205 - feature_engineering - WARNING - Error processing match 65: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,206 - feature_engineering - WARNING - Error processing match 66: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,207 - feature_engineering - WARNING - Error processing match 67: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,208 - feature_engineering - WARNING - Error processing match 68: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,209 - feature_engineering - WARNING - Error processing match 69: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,210 - feature_engineering - WARNING - Error processing match 70: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,211 - feature_engineering - WARNING - Error processing match 71: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,212 - feature_engineering - WARNING - Error processing match 72: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,213 - feature_engineering - WARNING - Error processing match 73: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,213 - feature_engineering - WARNING - Error processing match 74: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,214 - feature_engineering - WARNING - Error processing match 75: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,215 - feature_engineering - WARNING - Error processing match 76: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,216 - feature_engineering - WARNING - Error processing match 77: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,217 - feature_engineering - WARNING - Error processing match 78: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,218 - feature_engineering - WARNING - Error processing match 79: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,219 - feature_engineering - WARNING - Error processing match 80: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,220 - feature_engineering - WARNING - Error processing match 81: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,221 - feature_engineering - WARNING - Error processing match 82: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,222 - feature_engineering - WARNING - Error processing match 83: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,223 - feature_engineering - WARNING - Error processing match 84: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,223 - feature_engineering - WARNING - Error processing match 85: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,224 - feature_engineering - WARNING - Error processing match 86: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,225 - feature_engineering - WARNING - Error processing match 87: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,227 - feature_engineering - WARNING - Error processing match 88: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,228 - feature_engineering - WARNING - Error processing match 89: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,229 - feature_engineering - WARNING - Error processing match 90: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,230 - feature_engineering - WARNING - Error processing match 91: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,231 - feature_engineering - WARNING - Error processing match 92: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,231 - feature_engineering - WARNING - Error processing match 93: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,232 - feature_engineering - WARNING - Error processing match 94: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,232 - feature_engineering - WARNING - Error processing match 95: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,232 - feature_engineering - WARNING - Error processing match 96: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,232 - feature_engineering - WARNING - Error processing match 97: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,235 - feature_engineering - WARNING - Error processing match 98: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,236 - feature_engineering - WARNING - Error processing match 99: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,236 - feature_engineering - WARNING - Error processing match 100: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,237 - feature_engineering - WARNING - Error processing match 101: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,238 - feature_engineering - WARNING - Error processing match 102: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,238 - feature_engineering - WARNING - Error processing match 103: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,239 - feature_engineering - WARNING - Error processing match 104: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,240 - feature_engineering - WARNING - Error processing match 105: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,241 - feature_engineering - WARNING - Error processing match 106: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,241 - feature_engineering - WARNING - Error processing match 107: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,243 - feature_engineering - WARNING - Error processing match 108: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,244 - feature_engineering - WARNING - Error processing match 109: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,245 - feature_engineering - WARNING - Error processing match 110: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,245 - feature_engineering - WARNING - Error processing match 111: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,246 - feature_engineering - WARNING - Error processing match 112: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,247 - feature_engineering - WARNING - Error processing match 113: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,247 - feature_engineering - WARNING - Error processing match 114: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,248 - feature_engineering - WARNING - Error processing match 115: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,249 - feature_engineering - WARNING - Error processing match 116: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,250 - feature_engineering - WARNING - Error processing match 117: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,250 - feature_engineering - WARNING - Error processing match 118: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,250 - feature_engineering - WARNING - Error processing match 119: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,250 - feature_engineering - WARNING - Error processing match 120: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,253 - feature_engineering - WARNING - Error processing match 121: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,253 - feature_engineering - WARNING - Error processing match 122: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,254 - feature_engineering - WARNING - Error processing match 123: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,255 - feature_engineering - WARNING - Error processing match 124: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,256 - feature_engineering - WARNING - Error processing match 125: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,256 - feature_engineering - WARNING - Error processing match 126: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,257 - feature_engineering - WARNING - Error processing match 127: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,257 - feature_engineering - WARNING - Error processing match 128: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,258 - feature_engineering - WARNING - Error processing match 129: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,260 - feature_engineering - WARNING - Error processing match 130: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,260 - feature_engineering - WARNING - Error processing match 131: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,261 - feature_engineering - WARNING - Error processing match 132: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,262 - feature_engineering - WARNING - Error processing match 133: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,263 - feature_engineering - WARNING - Error processing match 134: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,264 - feature_engineering - WARNING - Error processing match 135: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,264 - feature_engineering - WARNING - Error processing match 136: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,264 - feature_engineering - WARNING - Error processing match 137: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,266 - feature_engineering - WARNING - Error processing match 138: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,269 - feature_engineering - WARNING - Error processing match 139: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,269 - feature_engineering - WARNING - Error processing match 140: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,270 - feature_engineering - WARNING - Error processing match 141: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,271 - feature_engineering - WARNING - Error processing match 142: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,272 - feature_engineering - WARNING - Error processing match 143: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,273 - feature_engineering - WARNING - Error processing match 144: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,273 - feature_engineering - WARNING - Error processing match 145: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,274 - feature_engineering - WARNING - Error processing match 146: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,275 - feature_engineering - WARNING - Error processing match 147: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,276 - feature_engineering - WARNING - Error processing match 148: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,277 - feature_engineering - WARNING - Error processing match 149: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,278 - feature_engineering - WARNING - Error processing match 150: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,279 - feature_engineering - WARNING - Error processing match 151: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,279 - feature_engineering - WARNING - Error processing match 152: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,280 - feature_engineering - WARNING - Error processing match 153: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,281 - feature_engineering - WARNING - Error processing match 154: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,281 - feature_engineering - WARNING - Error processing match 155: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,281 - feature_engineering - WARNING - Error processing match 156: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,281 - feature_engineering - WARNING - Error processing match 157: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,281 - feature_engineering - WARNING - Error processing match 158: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,281 - feature_engineering - WARNING - Error processing match 159: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,281 - feature_engineering - WARNING - Error processing match 160: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,286 - feature_engineering - WARNING - Error processing match 161: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,286 - feature_engineering - WARNING - Error processing match 162: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,288 - feature_engineering - WARNING - Error processing match 163: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,289 - feature_engineering - WARNING - Error processing match 164: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,290 - feature_engineering - WARNING - Error processing match 165: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,291 - feature_engineering - WARNING - Error processing match 166: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,292 - feature_engineering - WARNING - Error processing match 167: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,292 - feature_engineering - WARNING - Error processing match 168: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,293 - feature_engineering - WARNING - Error processing match 169: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,293 - feature_engineering - WARNING - Error processing match 170: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,294 - feature_engineering - WARNING - Error processing match 171: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,295 - feature_engineering - WARNING - Error processing match 172: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,295 - feature_engineering - WARNING - Error processing match 173: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,297 - feature_engineering - WARNING - Error processing match 174: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,298 - feature_engineering - WARNING - Error processing match 175: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,298 - feature_engineering - WARNING - Error processing match 176: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,299 - feature_engineering - WARNING - Error processing match 177: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,300 - feature_engineering - WARNING - Error processing match 178: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,301 - feature_engineering - WARNING - Error processing match 179: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,301 - feature_engineering - WARNING - Error processing match 180: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,302 - feature_engineering - WARNING - Error processing match 181: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,303 - feature_engineering - WARNING - Error processing match 182: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,304 - feature_engineering - WARNING - Error processing match 183: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,304 - feature_engineering - WARNING - Error processing match 184: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,305 - feature_engineering - WARNING - Error processing match 185: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,306 - feature_engineering - WARNING - Error processing match 186: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,306 - feature_engineering - WARNING - Error processing match 187: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,307 - feature_engineering - WARNING - Error processing match 188: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,308 - feature_engineering - WARNING - Error processing match 189: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,309 - feature_engineering - WARNING - Error processing match 190: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,311 - feature_engineering - WARNING - Error processing match 191: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,312 - feature_engineering - WARNING - Error processing match 192: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,312 - feature_engineering - WARNING - Error processing match 193: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,313 - feature_engineering - WARNING - Error processing match 194: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,314 - feature_engineering - WARNING - Error processing match 195: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,315 - feature_engineering - WARNING - Error processing match 196: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,315 - feature_engineering - WARNING - Error processing match 197: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,316 - feature_engineering - WARNING - Error processing match 198: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,316 - feature_engineering - WARNING - Error processing match 199: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,317 - feature_engineering - WARNING - Error processing match 200: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,318 - feature_engineering - WARNING - Error processing match 201: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,318 - feature_engineering - WARNING - Error processing match 202: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,319 - feature_engineering - WARNING - Error processing match 203: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,320 - feature_engineering - WARNING - Error processing match 204: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,322 - feature_engineering - WARNING - Error processing match 205: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,322 - feature_engineering - WARNING - Error processing match 206: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,323 - feature_engineering - WARNING - Error processing match 207: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,324 - feature_engineering - WARNING - Error processing match 208: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,325 - feature_engineering - WARNING - Error processing match 209: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,326 - feature_engineering - WARNING - Error processing match 210: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,326 - feature_engineering - WARNING - Error processing match 211: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,327 - feature_engineering - WARNING - Error processing match 212: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,328 - feature_engineering - WARNING - Error processing match 213: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,329 - feature_engineering - WARNING - Error processing match 214: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,329 - feature_engineering - WARNING - Error processing match 215: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,330 - feature_engineering - WARNING - Error processing match 216: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,331 - feature_engineering - WARNING - Error processing match 217: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,331 - feature_engineering - WARNING - Error processing match 218: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,333 - feature_engineering - WARNING - Error processing match 219: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,333 - feature_engineering - WARNING - Error processing match 220: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,333 - feature_engineering - WARNING - Error processing match 221: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,333 - feature_engineering - WARNING - Error processing match 222: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,333 - feature_engineering - WARNING - Error processing match 223: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,333 - feature_engineering - WARNING - Error processing match 224: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,339 - feature_engineering - WARNING - Error processing match 225: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,339 - feature_engineering - WARNING - Error processing match 226: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,340 - feature_engineering - WARNING - Error processing match 227: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,341 - feature_engineering - WARNING - Error processing match 228: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,341 - feature_engineering - WARNING - Error processing match 229: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,343 - feature_engineering - WARNING - Error processing match 230: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,343 - feature_engineering - WARNING - Error processing match 231: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,344 - feature_engineering - WARNING - Error processing match 232: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,344 - feature_engineering - WARNING - Error processing match 233: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,345 - feature_engineering - WARNING - Error processing match 234: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,345 - feature_engineering - WARNING - Error processing match 235: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,346 - feature_engineering - WARNING - Error processing match 236: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,347 - feature_engineering - WARNING - Error processing match 237: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,348 - feature_engineering - WARNING - Error processing match 238: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,349 - feature_engineering - WARNING - Error processing match 239: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,350 - feature_engineering - WARNING - Error processing match 240: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,350 - feature_engineering - WARNING - Error processing match 241: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,351 - feature_engineering - WARNING - Error processing match 242: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,351 - feature_engineering - WARNING - Error processing match 243: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,351 - feature_engineering - WARNING - Error processing match 244: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,351 - feature_engineering - WARNING - Error processing match 245: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,354 - feature_engineering - WARNING - Error processing match 246: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,354 - feature_engineering - WARNING - Error processing match 247: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,355 - feature_engineering - WARNING - Error processing match 248: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,356 - feature_engineering - WARNING - Error processing match 249: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,357 - feature_engineering - WARNING - Error processing match 250: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,357 - feature_engineering - WARNING - Error processing match 251: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,359 - feature_engineering - WARNING - Error processing match 252: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,359 - feature_engineering - WARNING - Error processing match 253: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,361 - feature_engineering - WARNING - Error processing match 254: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,361 - feature_engineering - WARNING - Error processing match 255: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,362 - feature_engineering - WARNING - Error processing match 256: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,363 - feature_engineering - WARNING - Error processing match 257: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,364 - feature_engineering - WARNING - Error processing match 258: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,365 - feature_engineering - WARNING - Error processing match 259: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,366 - feature_engineering - WARNING - Error processing match 260: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,366 - feature_engineering - WARNING - Error processing match 261: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,366 - feature_engineering - WARNING - Error processing match 262: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,366 - feature_engineering - WARNING - Error processing match 263: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,369 - feature_engineering - WARNING - Error processing match 264: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,369 - feature_engineering - WARNING - Error processing match 265: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,369 - feature_engineering - WARNING - Error processing match 266: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,371 - feature_engineering - WARNING - Error processing match 267: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,372 - feature_engineering - WARNING - Error processing match 268: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,374 - feature_engineering - WARNING - Error processing match 269: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,375 - feature_engineering - WARNING - Error processing match 270: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,376 - feature_engineering - WARNING - Error processing match 271: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,377 - feature_engineering - WARNING - Error processing match 272: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,378 - feature_engineering - WARNING - Error processing match 273: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,378 - feature_engineering - WARNING - Error processing match 274: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,379 - feature_engineering - WARNING - Error processing match 275: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,379 - feature_engineering - WARNING - Error processing match 276: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,380 - feature_engineering - WARNING - Error processing match 277: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,381 - feature_engineering - WARNING - Error processing match 278: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,382 - feature_engineering - WARNING - Error processing match 279: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,382 - feature_engineering - WARNING - Error processing match 280: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,384 - feature_engineering - WARNING - Error processing match 281: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,384 - feature_engineering - WARNING - Error processing match 282: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,385 - feature_engineering - WARNING - Error processing match 283: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,386 - feature_engineering - WARNING - Error processing match 284: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,387 - feature_engineering - WARNING - Error processing match 285: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,387 - feature_engineering - WARNING - Error processing match 286: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,388 - feature_engineering - WARNING - Error processing match 287: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,389 - feature_engineering - WARNING - Error processing match 288: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,390 - feature_engineering - WARNING - Error processing match 289: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,391 - feature_engineering - WARNING - Error processing match 290: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,391 - feature_engineering - WARNING - Error processing match 291: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,393 - feature_engineering - WARNING - Error processing match 292: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,393 - feature_engineering - WARNING - Error processing match 293: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,394 - feature_engineering - WARNING - Error processing match 294: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,395 - feature_engineering - WARNING - Error processing match 295: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,396 - feature_engineering - WARNING - Error processing match 296: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,396 - feature_engineering - WARNING - Error processing match 297: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,397 - feature_engineering - WARNING - Error processing match 298: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,398 - feature_engineering - WARNING - Error processing match 299: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,398 - feature_engineering - WARNING - Error processing match 300: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,400 - feature_engineering - WARNING - Error processing match 301: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,400 - feature_engineering - WARNING - Error processing match 302: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,401 - feature_engineering - WARNING - Error processing match 303: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,401 - feature_engineering - WARNING - Error processing match 304: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,402 - feature_engineering - WARNING - Error processing match 305: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,403 - feature_engineering - WARNING - Error processing match 306: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,404 - feature_engineering - WARNING - Error processing match 307: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,405 - feature_engineering - WARNING - Error processing match 308: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,405 - feature_engineering - WARNING - Error processing match 309: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,407 - feature_engineering - WARNING - Error processing match 310: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,407 - feature_engineering - WARNING - Error processing match 311: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,408 - feature_engineering - WARNING - Error processing match 312: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,409 - feature_engineering - WARNING - Error processing match 313: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,410 - feature_engineering - WARNING - Error processing match 314: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,410 - feature_engineering - WARNING - Error processing match 315: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,411 - feature_engineering - WARNING - Error processing match 316: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,412 - feature_engineering - WARNING - Error processing match 317: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,413 - feature_engineering - WARNING - Error processing match 318: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,414 - feature_engineering - WARNING - Error processing match 319: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,414 - feature_engineering - WARNING - Error processing match 320: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,415 - feature_engineering - WARNING - Error processing match 321: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,416 - feature_engineering - WARNING - Error processing match 322: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,417 - feature_engineering - WARNING - Error processing match 323: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,418 - feature_engineering - WARNING - Error processing match 324: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,419 - feature_engineering - WARNING - Error processing match 325: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,419 - feature_engineering - WARNING - Error processing match 326: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,419 - feature_engineering - WARNING - Error processing match 327: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,420 - feature_engineering - WARNING - Error processing match 328: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,421 - feature_engineering - WARNING - Error processing match 329: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,422 - feature_engineering - WARNING - Error processing match 330: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,422 - feature_engineering - WARNING - Error processing match 331: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,423 - feature_engineering - WARNING - Error processing match 332: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,424 - feature_engineering - WARNING - Error processing match 333: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,425 - feature_engineering - WARNING - Error processing match 334: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,426 - feature_engineering - WARNING - Error processing match 335: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,427 - feature_engineering - WARNING - Error processing match 336: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,427 - feature_engineering - WARNING - Error processing match 337: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,428 - feature_engineering - WARNING - Error processing match 338: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,429 - feature_engineering - WARNING - Error processing match 339: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,429 - feature_engineering - WARNING - Error processing match 340: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,430 - feature_engineering - WARNING - Error processing match 341: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,431 - feature_engineering - WARNING - Error processing match 342: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,431 - feature_engineering - WARNING - Error processing match 343: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,431 - feature_engineering - WARNING - Error processing match 344: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,431 - feature_engineering - WARNING - Error processing match 345: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,431 - feature_engineering - WARNING - Error processing match 346: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,431 - feature_engineering - WARNING - Error processing match 347: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,431 - feature_engineering - WARNING - Error processing match 348: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,437 - feature_engineering - WARNING - Error processing match 349: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,437 - feature_engineering - WARNING - Error processing match 350: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,438 - feature_engineering - WARNING - Error processing match 351: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,439 - feature_engineering - WARNING - Error processing match 352: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,439 - feature_engineering - WARNING - Error processing match 353: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,441 - feature_engineering - WARNING - Error processing match 354: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,442 - feature_engineering - WARNING - Error processing match 355: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,442 - feature_engineering - WARNING - Error processing match 356: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,443 - feature_engineering - WARNING - Error processing match 357: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,444 - feature_engineering - WARNING - Error processing match 358: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,445 - feature_engineering - WARNING - Error processing match 359: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,446 - feature_engineering - WARNING - Error processing match 360: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,446 - feature_engineering - WARNING - Error processing match 361: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,447 - feature_engineering - WARNING - Error processing match 362: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,448 - feature_engineering - WARNING - Error processing match 363: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,449 - feature_engineering - WARNING - Error processing match 364: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,449 - feature_engineering - WARNING - Error processing match 365: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,450 - feature_engineering - WARNING - Error processing match 366: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,451 - feature_engineering - WARNING - Error processing match 367: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,451 - feature_engineering - WARNING - Error processing match 368: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,452 - feature_engineering - WARNING - Error processing match 369: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,453 - feature_engineering - WARNING - Error processing match 370: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,454 - feature_engineering - WARNING - Error processing match 371: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,454 - feature_engineering - WARNING - Error processing match 372: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,455 - feature_engineering - WARNING - Error processing match 373: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,456 - feature_engineering - WARNING - Error processing match 374: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,456 - feature_engineering - WARNING - Error processing match 375: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,457 - feature_engineering - WARNING - Error processing match 376: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,459 - feature_engineering - WARNING - Error processing match 377: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,459 - feature_engineering - WARNING - Error processing match 378: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,459 - feature_engineering - WARNING - Error processing match 379: FeatureEngineer._get_team_matches() got an unexpected keyword argument 'as_away'
+2026-05-25 09:56:40,461 - feature_engineering - INFO - Built training data: 1 samples, 60 features
+2026-05-25 09:56:40,461 - __main__ - INFO - Training data shape: (1, 60)
+2026-05-25 09:56:40,461 - __main__ - INFO - Feature columns: 60
+2026-05-25 09:56:40,461 - __main__ - INFO - Preprocessing features...
+2026-05-25 09:56:40,461 - __main__ - INFO - Features preprocessed: (1, 60)
+2026-05-25 09:56:40,461 - __main__ - ERROR - Training failed: Insufficient data to create a train/test split. Need at least 2 samples.
+Traceback (most recent call last):
+  File "c:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\train_model.py", line 422, in main
+    metrics = trainer.train(optimize_hyperparams=True)
+  File "c:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\train_model.py", line 250, in train
+    raise ValueError(
+ValueError: Insufficient data to create a train/test split. Need at least 2 samples.
+2026-05-25 09:59:28,487 - __main__ - INFO - ======================================================================
+2026-05-25 09:59:28,487 - __main__ - INFO - Starting model training
+2026-05-25 09:59:28,487 - __main__ - INFO - ======================================================================
+2026-05-25 09:59:28,487 - data_loader - INFO - DataLoader initialized
+2026-05-25 09:59:28,495 - data_loader - INFO - Loaded 380 fixtures
+2026-05-25 09:59:28,516 - data_loader - INFO - Loaded 4325 head-to-head records
+2026-05-25 09:59:28,516 - feature_engineering - INFO - FeatureEngineer initialized
+2026-05-25 09:59:28,516 - __main__ - INFO - ModelTrainer initialized
+2026-05-25 09:59:28,516 - __main__ - INFO - Preparing training data...
+2026-05-25 09:59:28,518 - feature_engineering - INFO - Building training data...
+2026-05-25 09:59:28,520 - feature_engineering - WARNING - No history before 2022-08-05 00:00:00
+2026-05-25 09:59:28,547 - data_loader - INFO - Loaded 760 fixture statistics
+2026-05-25 09:59:32,470 - feature_engineering - INFO - Built training data: 380 samples, 88 features
+2026-05-25 09:59:32,470 - __main__ - INFO - Training data shape: (380, 88)
+2026-05-25 09:59:32,470 - __main__ - INFO - Feature columns: 88
+2026-05-25 09:59:32,470 - __main__ - INFO - Preprocessing features...
+2026-05-25 09:59:32,477 - __main__ - INFO - Features preprocessed: (380, 87)
+2026-05-25 09:59:32,477 - __main__ - INFO - Train/Test split: 304/76
+2026-05-25 09:59:32,477 - __main__ - INFO - 
+============================================================
+2026-05-25 09:59:32,477 - __main__ - INFO - Training model for home_goals
+2026-05-25 09:59:32,480 - __main__ - INFO - ============================================================
+2026-05-25 09:59:32,480 - __main__ - INFO - Starting hyperparameter optimization for home_goals...
+2026-05-25 09:59:58,642 - __main__ - INFO - Best parameters for home_goals: {'n_estimators': 73, 'max_depth': 9, 'learning_rate': 0.010133681531964643, 'subsample': 0.7741874601327157, 'colsample_bytree': 0.7020228276855583, 'min_child_weight': 1}
+2026-05-25 09:59:58,642 - __main__ - INFO - Best score: 1.7790
+2026-05-25 09:59:58,644 - __main__ - ERROR - Training failed: XGBModel.fit() got an unexpected keyword argument 'early_stopping_rounds'
+Traceback (most recent call last):
+  File "C:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\train_model.py", line 422, in main
+    metrics = trainer.train(optimize_hyperparams=True)
+  File "C:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\train_model.py", line 291, in train
+    model.fit(
+  File "C:\Users\7610\AppData\Local\Programs\Python\Python310\lib\site-packages\xgboost\core.py", line 751, in inner_f
+    return func(**kwargs)
+TypeError: XGBModel.fit() got an unexpected keyword argument 'early_stopping_rounds'
+2026-05-25 10:02:46,715 - __main__ - INFO - ======================================================================
+2026-05-25 10:02:46,715 - __main__ - INFO - Starting model training
+2026-05-25 10:02:46,715 - __main__ - INFO - ======================================================================
+2026-05-25 10:02:46,715 - data_loader - INFO - DataLoader initialized
+2026-05-25 10:02:46,717 - data_loader - INFO - Loaded 380 fixtures
+2026-05-25 10:02:46,735 - data_loader - INFO - Loaded 4325 head-to-head records
+2026-05-25 10:02:46,735 - feature_engineering - INFO - FeatureEngineer initialized
+2026-05-25 10:02:46,735 - __main__ - INFO - ModelTrainer initialized
+2026-05-25 10:02:46,735 - __main__ - INFO - Preparing training data...
+2026-05-25 10:02:46,735 - feature_engineering - INFO - Building training data...
+2026-05-25 10:02:46,746 - feature_engineering - WARNING - No history before 2022-08-05 00:00:00
+2026-05-25 10:02:46,756 - data_loader - INFO - Loaded 760 fixture statistics
+2026-05-25 10:02:50,556 - feature_engineering - INFO - Built training data: 380 samples, 88 features
+2026-05-25 10:02:50,558 - __main__ - INFO - Training data shape: (380, 88)
+2026-05-25 10:02:50,558 - __main__ - INFO - Feature columns: 88
+2026-05-25 10:02:50,558 - __main__ - INFO - Preprocessing features...
+2026-05-25 10:02:50,558 - __main__ - INFO - Features preprocessed: (380, 87)
+2026-05-25 10:02:50,558 - __main__ - INFO - Train/Test split: 304/76
+2026-05-25 10:02:50,558 - __main__ - INFO - 
+============================================================
+2026-05-25 10:02:50,558 - __main__ - INFO - Training model for home_goals
+2026-05-25 10:02:50,558 - __main__ - INFO - ============================================================
+2026-05-25 10:02:50,558 - __main__ - INFO - Starting hyperparameter optimization for home_goals...
+2026-05-25 10:03:15,815 - __main__ - INFO - Best parameters for home_goals: {'n_estimators': 73, 'max_depth': 9, 'learning_rate': 0.010133681531964643, 'subsample': 0.7741874601327157, 'colsample_bytree': 0.7020228276855583, 'min_child_weight': 1}
+2026-05-25 10:03:15,815 - __main__ - INFO - Best score: 1.7790
+2026-05-25 10:03:15,815 - __main__ - ERROR - Training failed: XGBModel.fit() got an unexpected keyword argument 'callbacks'
+Traceback (most recent call last):
+  File "C:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\train_model.py", line 430, in main
+    metrics = trainer.train(optimize_hyperparams=True)
+  File "C:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\train_model.py", line 292, in train
+    model.fit(
+  File "C:\Users\7610\AppData\Local\Programs\Python\Python310\lib\site-packages\xgboost\core.py", line 751, in inner_f
+    return func(**kwargs)
+TypeError: XGBModel.fit() got an unexpected keyword argument 'callbacks'
+2026-05-25 10:03:42,636 - __main__ - INFO - ======================================================================
+2026-05-25 10:03:42,636 - __main__ - INFO - Starting model training
+2026-05-25 10:03:42,636 - __main__ - INFO - ======================================================================
+2026-05-25 10:03:42,636 - data_loader - INFO - DataLoader initialized
+2026-05-25 10:03:42,640 - data_loader - INFO - Loaded 380 fixtures
+2026-05-25 10:03:42,653 - data_loader - INFO - Loaded 4325 head-to-head records
+2026-05-25 10:03:42,660 - feature_engineering - INFO - FeatureEngineer initialized
+2026-05-25 10:03:42,660 - __main__ - INFO - ModelTrainer initialized
+2026-05-25 10:03:42,660 - __main__ - INFO - Preparing training data...
+2026-05-25 10:03:42,660 - feature_engineering - INFO - Building training data...
+2026-05-25 10:03:42,660 - feature_engineering - WARNING - No history before 2022-08-05 00:00:00
+2026-05-25 10:03:42,681 - data_loader - INFO - Loaded 760 fixture statistics
+2026-05-25 10:03:46,560 - feature_engineering - INFO - Built training data: 380 samples, 88 features
+2026-05-25 10:03:46,565 - __main__ - INFO - Training data shape: (380, 88)
+2026-05-25 10:03:46,565 - __main__ - INFO - Feature columns: 88
+2026-05-25 10:03:46,565 - __main__ - INFO - Preprocessing features...
+2026-05-25 10:03:46,571 - __main__ - INFO - Features preprocessed: (380, 87)
+2026-05-25 10:03:46,573 - __main__ - INFO - Train/Test split: 304/76
+2026-05-25 10:03:46,573 - __main__ - INFO - 
+============================================================
+2026-05-25 10:03:46,573 - __main__ - INFO - Training model for home_goals
+2026-05-25 10:03:46,574 - __main__ - INFO - ============================================================
+2026-05-25 10:03:46,574 - __main__ - INFO - Starting hyperparameter optimization for home_goals...
+2026-05-25 10:04:12,401 - __main__ - INFO - Best parameters for home_goals: {'n_estimators': 73, 'max_depth': 9, 'learning_rate': 0.010133681531964643, 'subsample': 0.7741874601327157, 'colsample_bytree': 0.7020228276855583, 'min_child_weight': 1}
+2026-05-25 10:04:12,401 - __main__ - INFO - Best score: 1.7790
+2026-05-25 10:04:12,794 - __main__ - INFO - 
+Metrics for home_goals:
+2026-05-25 10:04:12,796 - __main__ - INFO -   Train MAE:  0.7300
+2026-05-25 10:04:12,796 - __main__ - INFO -   Test MAE:   1.1192
+2026-05-25 10:04:12,796 - __main__ - INFO -   Train RMSE: 0.9530
+2026-05-25 10:04:12,796 - __main__ - INFO -   Test RMSE:  1.4586
+2026-05-25 10:04:12,796 - __main__ - INFO -   Train R2:   0.5382
+2026-05-25 10:04:12,796 - __main__ - INFO -   Test R2:    0.0067
+2026-05-25 10:04:12,800 - __main__ - ERROR - Training failed: All arrays must be of the same length
+Traceback (most recent call last):
+  File "C:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\train_model.py", line 421, in main
+    metrics = trainer.train(optimize_hyperparams=True)
+  File "C:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\train_model.py", line 341, in train
+    importance = pd.DataFrame({
+  File "C:\Users\7610\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\frame.py", line 782, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+  File "C:\Users\7610\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\construction.py", line 503, in dict_to_mgr
+    return arrays_to_mgr(arrays, columns, index, dtype=dtype, typ=typ, consolidate=copy)
+  File "C:\Users\7610\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\construction.py", line 114, in arrays_to_mgr
+    index = _extract_index(arrays)
+  File "C:\Users\7610\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\internals\construction.py", line 677, in _extract_index
+    raise ValueError("All arrays must be of the same length")
+ValueError: All arrays must be of the same length
+2026-05-25 10:04:48,447 - __main__ - INFO - ======================================================================
+2026-05-25 10:04:48,447 - __main__ - INFO - Starting model training
+2026-05-25 10:04:48,447 - __main__ - INFO - ======================================================================
+2026-05-25 10:04:48,447 - data_loader - INFO - DataLoader initialized
+2026-05-25 10:04:48,452 - data_loader - INFO - Loaded 380 fixtures
+2026-05-25 10:04:48,472 - data_loader - INFO - Loaded 4325 head-to-head records
+2026-05-25 10:04:48,472 - feature_engineering - INFO - FeatureEngineer initialized
+2026-05-25 10:04:48,472 - __main__ - INFO - ModelTrainer initialized
+2026-05-25 10:04:48,472 - __main__ - INFO - Preparing training data...
+2026-05-25 10:04:48,472 - feature_engineering - INFO - Building training data...
+2026-05-25 10:04:48,472 - feature_engineering - WARNING - No history before 2022-08-05 00:00:00
+2026-05-25 10:04:48,492 - data_loader - INFO - Loaded 760 fixture statistics
+2026-05-25 10:04:52,250 - feature_engineering - INFO - Built training data: 380 samples, 88 features
+2026-05-25 10:04:52,253 - __main__ - INFO - Training data shape: (380, 88)
+2026-05-25 10:04:52,254 - __main__ - INFO - Feature columns: 88
+2026-05-25 10:04:52,254 - __main__ - INFO - Preprocessing features...
+2026-05-25 10:04:52,260 - __main__ - INFO - Features preprocessed: (380, 87)
+2026-05-25 10:04:52,261 - __main__ - INFO - Train/Test split: 304/76
+2026-05-25 10:04:52,261 - __main__ - INFO - 
+============================================================
+2026-05-25 10:04:52,261 - __main__ - INFO - Training model for home_goals
+2026-05-25 10:04:52,261 - __main__ - INFO - ============================================================
+2026-05-25 10:04:52,261 - __main__ - INFO - Starting hyperparameter optimization for home_goals...
+2026-05-25 10:05:15,806 - __main__ - INFO - Best parameters for home_goals: {'n_estimators': 73, 'max_depth': 9, 'learning_rate': 0.010133681531964643, 'subsample': 0.7741874601327157, 'colsample_bytree': 0.7020228276855583, 'min_child_weight': 1}
+2026-05-25 10:05:15,806 - __main__ - INFO - Best score: 1.7790
+2026-05-25 10:05:16,215 - __main__ - INFO - 
+Metrics for home_goals:
+2026-05-25 10:05:16,217 - __main__ - INFO -   Train MAE:  0.7300
+2026-05-25 10:05:16,217 - __main__ - INFO -   Test MAE:   1.1192
+2026-05-25 10:05:16,217 - __main__ - INFO -   Train RMSE: 0.9530
+2026-05-25 10:05:16,217 - __main__ - INFO -   Test RMSE:  1.4586
+2026-05-25 10:05:16,217 - __main__ - INFO -   Train R2:   0.5382
+2026-05-25 10:05:16,219 - __main__ - INFO -   Test R2:    0.0067
+2026-05-25 10:05:16,223 - __main__ - INFO - 
+Top 10 features for home_goals:
+2026-05-25 10:05:16,229 - __main__ - INFO -                    feature  importance     target
+      home_last10_win_rate    0.046407 home_goals
+      home_attack_strength    0.039737 home_goals
+  away_last5_away_conceded    0.022859 home_goals
+        h2h_home_avg_goals    0.022153 home_goals
+ away_last5_away_avg_goals    0.021989 home_goals
+away_last10_matches_played    0.021452 home_goals
+     home_defense_strength    0.019861 home_goals
+     away_defense_strength    0.019570 home_goals
+     home_last10_loss_rate    0.019265 home_goals
+     home_last10_draw_rate    0.018726 home_goals
+2026-05-25 10:05:16,229 - __main__ - INFO - 
+============================================================
+2026-05-25 10:05:16,229 - __main__ - INFO - Training model for away_goals
+2026-05-25 10:05:16,229 - __main__ - INFO - ============================================================
+2026-05-25 10:05:16,231 - __main__ - INFO - Starting hyperparameter optimization for away_goals...
+2026-05-25 10:05:36,907 - __main__ - INFO - Best parameters for away_goals: {'n_estimators': 84, 'max_depth': 11, 'learning_rate': 0.012620925978080942, 'subsample': 0.6452606057786048, 'colsample_bytree': 0.8738445964974806, 'min_child_weight': 3}
+2026-05-25 10:05:36,907 - __main__ - INFO - Best score: 1.4620
+2026-05-25 10:05:37,233 - __main__ - INFO - 
+Metrics for away_goals:
+2026-05-25 10:05:37,233 - __main__ - INFO -   Train MAE:  0.5524
+2026-05-25 10:05:37,233 - __main__ - INFO -   Test MAE:   1.0353
+2026-05-25 10:05:37,233 - __main__ - INFO -   Train RMSE: 0.7009
+2026-05-25 10:05:37,233 - __main__ - INFO -   Test RMSE:  1.3655
+2026-05-25 10:05:37,233 - __main__ - INFO -   Train R2:   0.6175
+2026-05-25 10:05:37,233 - __main__ - INFO -   Test R2:    -0.0380
+2026-05-25 10:05:37,235 - __main__ - INFO - 
+Top 10 features for away_goals:
+2026-05-25 10:05:37,237 - __main__ - INFO -                      feature  importance     target
+        away_attack_strength    0.024191 away_goals
+    away_last10_total_points    0.023590 away_goals
+        away_last10_win_rate    0.022364 away_goals
+    home_last5_home_win_rate    0.019943 away_goals
+        home_momentum_attack    0.019361 away_goals
+ away_last10_goal_difference    0.019060 away_goals
+   home_last5_home_avg_goals    0.017677 away_goals
+home_last10_avg_goals_scored    0.017380 away_goals
+     home_last5_total_points    0.016822 away_goals
+ home_last10_goal_difference    0.016378 away_goals
+2026-05-25 10:05:37,240 - __main__ - INFO - Saving models...
+2026-05-25 10:05:37,246 - __main__ - INFO - Saved home goals model to C:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\saved_model\model_home_goals.pkl
+2026-05-25 10:05:37,252 - __main__ - INFO - Saved away goals model to C:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\saved_model\model_away_goals.pkl
+2026-05-25 10:05:37,253 - __main__ - INFO - Saved scaler to C:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\saved_model\scaler.pkl
+2026-05-25 10:05:37,253 - __main__ - INFO - Saved imputer to C:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\saved_model\imputer.pkl
+2026-05-25 10:05:37,257 - __main__ - INFO - Saved feature columns to C:\Users\7610\OneDrive\Dokumen\HQTCSDL\models\saved_model\feature_columns.pkl
+2026-05-25 10:05:37,257 - __main__ - INFO - All models saved successfully
+2026-05-25 10:05:37,258 - __main__ - INFO - 
+======================================================================
+2026-05-25 10:05:37,258 - __main__ - INFO - TRAINING SUMMARY
+2026-05-25 10:05:37,258 - __main__ - INFO - ======================================================================
+2026-05-25 10:05:37,258 - __main__ - INFO - 
+HOME_GOALS:
+2026-05-25 10:05:37,259 - __main__ - INFO -   train_mae: 0.7300
+2026-05-25 10:05:37,259 - __main__ - INFO -   test_mae: 1.1192
+2026-05-25 10:05:37,259 - __main__ - INFO -   train_rmse: 0.9530
+2026-05-25 10:05:37,259 - __main__ - INFO -   test_rmse: 1.4586
+2026-05-25 10:05:37,259 - __main__ - INFO -   train_r2: 0.5382
+2026-05-25 10:05:37,260 - __main__ - INFO -   test_r2: 0.0067
+2026-05-25 10:05:37,260 - __main__ - INFO - 
+AWAY_GOALS:
+2026-05-25 10:05:37,260 - __main__ - INFO -   train_mae: 0.5524
+2026-05-25 10:05:37,260 - __main__ - INFO -   test_mae: 1.0353
+2026-05-25 10:05:37,260 - __main__ - INFO -   train_rmse: 0.7009
+2026-05-25 10:05:37,260 - __main__ - INFO -   test_rmse: 1.3655
+2026-05-25 10:05:37,260 - __main__ - INFO -   train_r2: 0.6175
+2026-05-25 10:05:37,260 - __main__ - INFO -   test_r2: -0.0380
+2026-05-25 10:05:37,260 - __main__ - INFO - 
+Training completed successfully!

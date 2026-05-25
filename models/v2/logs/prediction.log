@@ -1,0 +1,420 @@
+2026-05-25 10:07:54,706 - __main__ - INFO - ======================================================================
+2026-05-25 10:07:54,706 - __main__ - INFO - Starting predictions
+2026-05-25 10:07:54,706 - __main__ - INFO - ======================================================================
+2026-05-25 10:07:54,706 - data_loader - INFO - DataLoader initialized
+2026-05-25 10:07:54,714 - data_loader - INFO - Loaded 380 fixtures
+2026-05-25 10:07:54,737 - data_loader - INFO - Loaded 4325 head-to-head records
+2026-05-25 10:07:54,737 - feature_engineering - INFO - FeatureEngineer initialized
+2026-05-25 10:07:54,737 - __main__ - INFO - Loading models...
+2026-05-25 10:07:54,863 - __main__ - INFO - Loaded home goals model
+2026-05-25 10:07:54,867 - __main__ - INFO - Loaded away goals model
+2026-05-25 10:07:54,867 - __main__ - INFO - Loaded scaler
+2026-05-25 10:07:54,867 - __main__ - INFO - Loaded imputer
+2026-05-25 10:07:54,867 - __main__ - INFO - Loaded 87 feature columns
+2026-05-25 10:07:54,870 - __main__ - INFO - PredictionEngine initialized
+2026-05-25 10:07:54,870 - __main__ - INFO - Predicting 2 matches...
+2026-05-25 10:07:54,870 - __main__ - INFO - Predicting Manchester United vs Chelsea on 2024-01-15
+2026-05-25 10:07:54,873 - data_loader - INFO - Loaded 20 teams
+2026-05-25 10:07:54,874 - __main__ - INFO - Building match features...
+2026-05-25 10:07:54,912 - data_loader - INFO - Loaded 760 fixture statistics
+2026-05-25 10:07:54,938 - __main__ - INFO - Prediction: Manchester United 2-1 Chelsea
+2026-05-25 10:07:54,939 - __main__ - INFO - Predicting Liverpool vs Arsenal on 2024-01-20
+2026-05-25 10:07:54,941 - __main__ - INFO - Building match features...
+2026-05-25 10:07:54,982 - __main__ - INFO - Prediction: Liverpool 2-2 Arsenal
+2026-05-25 10:07:54,983 - __main__ - INFO - Predicted 2/2 matches successfully
+2026-05-25 10:07:54,983 - __main__ - INFO - 
+======================================================================
+2026-05-25 10:07:54,983 - __main__ - INFO - PREDICTION RESULTS
+2026-05-25 10:07:54,984 - __main__ - INFO - ======================================================================
+2026-05-25 10:07:54,984 - __main__ - INFO - 
+Manchester United vs Chelsea (2024-01-15)
+2026-05-25 10:07:54,984 - __main__ - INFO -   Predicted Score: 2-1
+2026-05-25 10:07:54,984 - __main__ - INFO -   Winner: HOME_WIN
+2026-05-25 10:07:54,984 - __main__ - INFO -   Confidence: 0.65 (MEDIUM)
+2026-05-25 10:07:54,984 - __main__ - INFO - 
+Liverpool vs Arsenal (2024-01-20)
+2026-05-25 10:07:54,985 - __main__ - INFO -   Predicted Score: 2-2
+2026-05-25 10:07:54,985 - __main__ - INFO -   Winner: DRAW
+2026-05-25 10:07:54,985 - __main__ - INFO -   Confidence: 0.5 (LOW)
+2026-05-25 10:07:54,985 - __main__ - INFO - 
+Prediction completed successfully!
+2026-05-25 10:08:44,092 - __main__ - INFO - ======================================================================
+2026-05-25 10:08:44,092 - __main__ - INFO - Starting predictions
+2026-05-25 10:08:44,092 - __main__ - INFO - ======================================================================
+2026-05-25 10:08:44,092 - data_loader - INFO - DataLoader initialized
+2026-05-25 10:08:44,092 - data_loader - INFO - Loaded 380 fixtures
+2026-05-25 10:08:44,119 - data_loader - INFO - Loaded 4325 head-to-head records
+2026-05-25 10:08:44,119 - feature_engineering - INFO - FeatureEngineer initialized
+2026-05-25 10:08:44,119 - __main__ - INFO - Loading models...
+2026-05-25 10:08:44,240 - __main__ - INFO - Loaded home goals model
+2026-05-25 10:08:44,242 - __main__ - INFO - Loaded away goals model
+2026-05-25 10:08:44,243 - __main__ - INFO - Loaded scaler
+2026-05-25 10:08:44,244 - __main__ - INFO - Loaded imputer
+2026-05-25 10:08:44,244 - __main__ - INFO - Loaded 87 feature columns
+2026-05-25 10:08:44,244 - __main__ - INFO - PredictionEngine initialized
+2026-05-25 10:08:44,244 - __main__ - INFO - Predicting 2 matches...
+2026-05-25 10:08:44,244 - __main__ - INFO - Predicting Everton vs Manchester United on 2024-01-15
+2026-05-25 10:08:44,246 - data_loader - INFO - Loaded 20 teams
+2026-05-25 10:08:44,246 - __main__ - INFO - Building match features...
+2026-05-25 10:08:44,275 - data_loader - INFO - Loaded 760 fixture statistics
+2026-05-25 10:08:44,304 - __main__ - INFO - Prediction: Everton 1-1 Manchester United
+2026-05-25 10:08:44,304 - __main__ - INFO - Predicting Liverpool vs Arsenal on 2024-01-20
+2026-05-25 10:08:44,304 - __main__ - INFO - Building match features...
+2026-05-25 10:08:44,343 - __main__ - INFO - Prediction: Liverpool 2-2 Arsenal
+2026-05-25 10:08:44,343 - __main__ - INFO - Predicted 2/2 matches successfully
+2026-05-25 10:08:44,343 - __main__ - INFO - 
+======================================================================
+2026-05-25 10:08:44,343 - __main__ - INFO - PREDICTION RESULTS
+2026-05-25 10:08:44,344 - __main__ - INFO - ======================================================================
+2026-05-25 10:08:44,344 - __main__ - INFO - 
+Everton vs Manchester United (2024-01-15)
+2026-05-25 10:08:44,344 - __main__ - INFO -   Predicted Score: 1-1
+2026-05-25 10:08:44,344 - __main__ - INFO -   Winner: DRAW
+2026-05-25 10:08:44,344 - __main__ - INFO -   Confidence: 0.5 (LOW)
+2026-05-25 10:08:44,345 - __main__ - INFO - 
+Liverpool vs Arsenal (2024-01-20)
+2026-05-25 10:08:44,345 - __main__ - INFO -   Predicted Score: 2-2
+2026-05-25 10:08:44,345 - __main__ - INFO -   Winner: DRAW
+2026-05-25 10:08:44,345 - __main__ - INFO -   Confidence: 0.5 (LOW)
+2026-05-25 10:08:44,345 - __main__ - INFO - 
+Prediction completed successfully!
+2026-05-25 10:09:15,279 - __main__ - INFO - ======================================================================
+2026-05-25 10:09:15,280 - __main__ - INFO - Starting predictions
+2026-05-25 10:09:15,280 - __main__ - INFO - ======================================================================
+2026-05-25 10:09:15,280 - data_loader - INFO - DataLoader initialized
+2026-05-25 10:09:15,286 - data_loader - INFO - Loaded 380 fixtures
+2026-05-25 10:09:15,305 - data_loader - INFO - Loaded 4325 head-to-head records
+2026-05-25 10:09:15,306 - feature_engineering - INFO - FeatureEngineer initialized
+2026-05-25 10:09:15,307 - __main__ - INFO - Loading models...
+2026-05-25 10:09:15,427 - __main__ - INFO - Loaded home goals model
+2026-05-25 10:09:15,431 - __main__ - INFO - Loaded away goals model
+2026-05-25 10:09:15,432 - __main__ - INFO - Loaded scaler
+2026-05-25 10:09:15,433 - __main__ - INFO - Loaded imputer
+2026-05-25 10:09:15,433 - __main__ - INFO - Loaded 87 feature columns
+2026-05-25 10:09:15,434 - __main__ - INFO - PredictionEngine initialized
+2026-05-25 10:09:15,434 - __main__ - INFO - Predicting 2 matches...
+2026-05-25 10:09:15,434 - __main__ - INFO - Predicting Everton vs Liverpool on 2024-01-15
+2026-05-25 10:09:15,437 - data_loader - INFO - Loaded 20 teams
+2026-05-25 10:09:15,438 - __main__ - INFO - Building match features...
+2026-05-25 10:09:15,468 - data_loader - INFO - Loaded 760 fixture statistics
+2026-05-25 10:09:15,491 - __main__ - INFO - Prediction: Everton 1-1 Liverpool
+2026-05-25 10:09:15,492 - __main__ - INFO - Predicting Liverpool vs Arsenal on 2024-01-20
+2026-05-25 10:09:15,494 - __main__ - INFO - Building match features...
+2026-05-25 10:09:15,533 - __main__ - INFO - Prediction: Liverpool 2-2 Arsenal
+2026-05-25 10:09:15,533 - __main__ - INFO - Predicted 2/2 matches successfully
+2026-05-25 10:09:15,534 - __main__ - INFO - 
+======================================================================
+2026-05-25 10:09:15,534 - __main__ - INFO - PREDICTION RESULTS
+2026-05-25 10:09:15,535 - __main__ - INFO - ======================================================================
+2026-05-25 10:09:15,535 - __main__ - INFO - 
+Everton vs Liverpool (2024-01-15)
+2026-05-25 10:09:15,536 - __main__ - INFO -   Predicted Score: 1-1
+2026-05-25 10:09:15,537 - __main__ - INFO -   Winner: DRAW
+2026-05-25 10:09:15,537 - __main__ - INFO -   Confidence: 0.5 (LOW)
+2026-05-25 10:09:15,538 - __main__ - INFO - 
+Liverpool vs Arsenal (2024-01-20)
+2026-05-25 10:09:15,539 - __main__ - INFO -   Predicted Score: 2-2
+2026-05-25 10:09:15,539 - __main__ - INFO -   Winner: DRAW
+2026-05-25 10:09:15,540 - __main__ - INFO -   Confidence: 0.5 (LOW)
+2026-05-25 10:09:15,540 - __main__ - INFO - 
+Prediction completed successfully!
+2026-05-25 10:09:42,966 - __main__ - INFO - ======================================================================
+2026-05-25 10:09:42,967 - __main__ - INFO - Starting predictions
+2026-05-25 10:09:42,967 - __main__ - INFO - ======================================================================
+2026-05-25 10:09:42,967 - data_loader - INFO - DataLoader initialized
+2026-05-25 10:09:42,972 - data_loader - INFO - Loaded 380 fixtures
+2026-05-25 10:09:42,991 - data_loader - INFO - Loaded 4325 head-to-head records
+2026-05-25 10:09:42,992 - feature_engineering - INFO - FeatureEngineer initialized
+2026-05-25 10:09:42,992 - __main__ - INFO - Loading models...
+2026-05-25 10:09:43,103 - __main__ - INFO - Loaded home goals model
+2026-05-25 10:09:43,105 - __main__ - INFO - Loaded away goals model
+2026-05-25 10:09:43,107 - __main__ - INFO - Loaded scaler
+2026-05-25 10:09:43,109 - __main__ - INFO - Loaded imputer
+2026-05-25 10:09:43,110 - __main__ - INFO - Loaded 87 feature columns
+2026-05-25 10:09:43,111 - __main__ - INFO - PredictionEngine initialized
+2026-05-25 10:09:43,111 - __main__ - INFO - Predicting 2 matches...
+2026-05-25 10:09:43,111 - __main__ - INFO - Predicting Everton vs Liverpool on 2022-01-15
+2026-05-25 10:09:43,113 - data_loader - INFO - Loaded 20 teams
+2026-05-25 10:09:43,114 - __main__ - INFO - Building match features...
+2026-05-25 10:09:43,115 - feature_engineering - WARNING - No history before 2022-01-15 00:00:00
+2026-05-25 10:09:43,143 - __main__ - INFO - Prediction: Everton 2-1 Liverpool
+2026-05-25 10:09:43,145 - __main__ - INFO - Predicting Liverpool vs Arsenal on 2024-01-20
+2026-05-25 10:09:43,145 - __main__ - INFO - Building match features...
+2026-05-25 10:09:43,179 - data_loader - INFO - Loaded 760 fixture statistics
+2026-05-25 10:09:43,199 - __main__ - INFO - Prediction: Liverpool 2-2 Arsenal
+2026-05-25 10:09:43,199 - __main__ - INFO - Predicted 2/2 matches successfully
+2026-05-25 10:09:43,199 - __main__ - INFO - 
+======================================================================
+2026-05-25 10:09:43,199 - __main__ - INFO - PREDICTION RESULTS
+2026-05-25 10:09:43,201 - __main__ - INFO - ======================================================================
+2026-05-25 10:09:43,201 - __main__ - INFO - 
+Everton vs Liverpool (2022-01-15)
+2026-05-25 10:09:43,201 - __main__ - INFO -   Predicted Score: 2-1
+2026-05-25 10:09:43,201 - __main__ - INFO -   Winner: HOME_WIN
+2026-05-25 10:09:43,201 - __main__ - INFO -   Confidence: 0.65 (MEDIUM)
+2026-05-25 10:09:43,201 - __main__ - INFO - 
+Liverpool vs Arsenal (2024-01-20)
+2026-05-25 10:09:43,201 - __main__ - INFO -   Predicted Score: 2-2
+2026-05-25 10:09:43,203 - __main__ - INFO -   Winner: DRAW
+2026-05-25 10:09:43,203 - __main__ - INFO -   Confidence: 0.5 (LOW)
+2026-05-25 10:09:43,203 - __main__ - INFO - 
+Prediction completed successfully!
+2026-05-25 10:10:06,706 - __main__ - INFO - ======================================================================
+2026-05-25 10:10:06,706 - __main__ - INFO - Starting predictions
+2026-05-25 10:10:06,706 - __main__ - INFO - ======================================================================
+2026-05-25 10:10:06,706 - data_loader - INFO - DataLoader initialized
+2026-05-25 10:10:06,713 - data_loader - INFO - Loaded 380 fixtures
+2026-05-25 10:10:06,724 - data_loader - INFO - Loaded 4325 head-to-head records
+2026-05-25 10:10:06,724 - feature_engineering - INFO - FeatureEngineer initialized
+2026-05-25 10:10:06,734 - __main__ - INFO - Loading models...
+2026-05-25 10:10:06,840 - __main__ - INFO - Loaded home goals model
+2026-05-25 10:10:06,844 - __main__ - INFO - Loaded away goals model
+2026-05-25 10:10:06,845 - __main__ - INFO - Loaded scaler
+2026-05-25 10:10:06,846 - __main__ - INFO - Loaded imputer
+2026-05-25 10:10:06,846 - __main__ - INFO - Loaded 87 feature columns
+2026-05-25 10:10:06,847 - __main__ - INFO - PredictionEngine initialized
+2026-05-25 10:10:06,848 - __main__ - INFO - Predicting 2 matches...
+2026-05-25 10:10:06,848 - __main__ - INFO - Predicting Liverpool vs Everton on 2022-01-15
+2026-05-25 10:10:06,851 - data_loader - INFO - Loaded 20 teams
+2026-05-25 10:10:06,853 - __main__ - INFO - Building match features...
+2026-05-25 10:10:06,853 - feature_engineering - WARNING - No history before 2022-01-15 00:00:00
+2026-05-25 10:10:06,882 - __main__ - INFO - Prediction: Liverpool 2-1 Everton
+2026-05-25 10:10:06,884 - __main__ - INFO - Predicting Liverpool vs Arsenal on 2024-01-20
+2026-05-25 10:10:06,884 - __main__ - INFO - Building match features...
+2026-05-25 10:10:06,924 - data_loader - INFO - Loaded 760 fixture statistics
+2026-05-25 10:10:06,949 - __main__ - INFO - Prediction: Liverpool 2-2 Arsenal
+2026-05-25 10:10:06,949 - __main__ - INFO - Predicted 2/2 matches successfully
+2026-05-25 10:10:06,950 - __main__ - INFO - 
+======================================================================
+2026-05-25 10:10:06,950 - __main__ - INFO - PREDICTION RESULTS
+2026-05-25 10:10:06,950 - __main__ - INFO - ======================================================================
+2026-05-25 10:10:06,950 - __main__ - INFO - 
+Liverpool vs Everton (2022-01-15)
+2026-05-25 10:10:06,950 - __main__ - INFO -   Predicted Score: 2-1
+2026-05-25 10:10:06,950 - __main__ - INFO -   Winner: HOME_WIN
+2026-05-25 10:10:06,951 - __main__ - INFO -   Confidence: 0.65 (MEDIUM)
+2026-05-25 10:10:06,951 - __main__ - INFO - 
+Liverpool vs Arsenal (2024-01-20)
+2026-05-25 10:10:06,951 - __main__ - INFO -   Predicted Score: 2-2
+2026-05-25 10:10:06,951 - __main__ - INFO -   Winner: DRAW
+2026-05-25 10:10:06,951 - __main__ - INFO -   Confidence: 0.5 (LOW)
+2026-05-25 10:10:06,951 - __main__ - INFO - 
+Prediction completed successfully!
+2026-05-25 10:10:43,003 - __main__ - INFO - ======================================================================
+2026-05-25 10:10:43,003 - __main__ - INFO - Starting predictions
+2026-05-25 10:10:43,004 - __main__ - INFO - ======================================================================
+2026-05-25 10:10:43,004 - data_loader - INFO - DataLoader initialized
+2026-05-25 10:10:43,010 - data_loader - INFO - Loaded 380 fixtures
+2026-05-25 10:10:43,032 - data_loader - INFO - Loaded 4325 head-to-head records
+2026-05-25 10:10:43,032 - feature_engineering - INFO - FeatureEngineer initialized
+2026-05-25 10:10:43,033 - __main__ - INFO - Loading models...
+2026-05-25 10:10:43,149 - __main__ - INFO - Loaded home goals model
+2026-05-25 10:10:43,151 - __main__ - INFO - Loaded away goals model
+2026-05-25 10:10:43,152 - __main__ - INFO - Loaded scaler
+2026-05-25 10:10:43,152 - __main__ - INFO - Loaded imputer
+2026-05-25 10:10:43,153 - __main__ - INFO - Loaded 87 feature columns
+2026-05-25 10:10:43,153 - __main__ - INFO - PredictionEngine initialized
+2026-05-25 10:10:43,153 - __main__ - INFO - Predicting 2 matches...
+2026-05-25 10:10:43,154 - __main__ - INFO - Predicting Liverpool vs Everton on 2022-12-15
+2026-05-25 10:10:43,156 - data_loader - INFO - Loaded 20 teams
+2026-05-25 10:10:43,156 - __main__ - INFO - Building match features...
+2026-05-25 10:10:43,186 - data_loader - INFO - Loaded 760 fixture statistics
+2026-05-25 10:10:43,212 - __main__ - INFO - Prediction: Liverpool 2-1 Everton
+2026-05-25 10:10:43,213 - __main__ - INFO - Predicting Liverpool vs Arsenal on 2024-01-20
+2026-05-25 10:10:43,214 - __main__ - INFO - Building match features...
+2026-05-25 10:10:43,250 - __main__ - INFO - Prediction: Liverpool 2-2 Arsenal
+2026-05-25 10:10:43,251 - __main__ - INFO - Predicted 2/2 matches successfully
+2026-05-25 10:10:43,252 - __main__ - INFO - 
+======================================================================
+2026-05-25 10:10:43,252 - __main__ - INFO - PREDICTION RESULTS
+2026-05-25 10:10:43,253 - __main__ - INFO - ======================================================================
+2026-05-25 10:10:43,253 - __main__ - INFO - 
+Liverpool vs Everton (2022-12-15)
+2026-05-25 10:10:43,253 - __main__ - INFO -   Predicted Score: 2-1
+2026-05-25 10:10:43,254 - __main__ - INFO -   Winner: HOME_WIN
+2026-05-25 10:10:43,254 - __main__ - INFO -   Confidence: 0.65 (MEDIUM)
+2026-05-25 10:10:43,257 - __main__ - INFO - 
+Liverpool vs Arsenal (2024-01-20)
+2026-05-25 10:10:43,257 - __main__ - INFO -   Predicted Score: 2-2
+2026-05-25 10:10:43,258 - __main__ - INFO -   Winner: DRAW
+2026-05-25 10:10:43,258 - __main__ - INFO -   Confidence: 0.5 (LOW)
+2026-05-25 10:10:43,258 - __main__ - INFO - 
+Prediction completed successfully!
+2026-05-25 10:10:54,802 - __main__ - INFO - ======================================================================
+2026-05-25 10:10:54,802 - __main__ - INFO - Starting predictions
+2026-05-25 10:10:54,803 - __main__ - INFO - ======================================================================
+2026-05-25 10:10:54,803 - data_loader - INFO - DataLoader initialized
+2026-05-25 10:10:54,809 - data_loader - INFO - Loaded 380 fixtures
+2026-05-25 10:10:54,825 - data_loader - INFO - Loaded 4325 head-to-head records
+2026-05-25 10:10:54,826 - feature_engineering - INFO - FeatureEngineer initialized
+2026-05-25 10:10:54,826 - __main__ - INFO - Loading models...
+2026-05-25 10:10:54,946 - __main__ - INFO - Loaded home goals model
+2026-05-25 10:10:54,950 - __main__ - INFO - Loaded away goals model
+2026-05-25 10:10:54,951 - __main__ - INFO - Loaded scaler
+2026-05-25 10:10:54,952 - __main__ - INFO - Loaded imputer
+2026-05-25 10:10:54,952 - __main__ - INFO - Loaded 87 feature columns
+2026-05-25 10:10:54,953 - __main__ - INFO - PredictionEngine initialized
+2026-05-25 10:10:54,954 - __main__ - INFO - Predicting 2 matches...
+2026-05-25 10:10:54,954 - __main__ - INFO - Predicting Liverpool vs Everton on 2022-12-15
+2026-05-25 10:10:54,957 - data_loader - INFO - Loaded 20 teams
+2026-05-25 10:10:54,958 - __main__ - INFO - Building match features...
+2026-05-25 10:10:54,995 - data_loader - INFO - Loaded 760 fixture statistics
+2026-05-25 10:10:55,019 - __main__ - INFO - Prediction: Liverpool 2-1 Everton
+2026-05-25 10:10:55,020 - __main__ - INFO - Predicting Chelsea vs Arsenal on 2024-01-20
+2026-05-25 10:10:55,021 - __main__ - INFO - Building match features...
+2026-05-25 10:10:55,068 - __main__ - INFO - Prediction: Chelsea 1-2 Arsenal
+2026-05-25 10:10:55,068 - __main__ - INFO - Predicted 2/2 matches successfully
+2026-05-25 10:10:55,069 - __main__ - INFO - 
+======================================================================
+2026-05-25 10:10:55,069 - __main__ - INFO - PREDICTION RESULTS
+2026-05-25 10:10:55,069 - __main__ - INFO - ======================================================================
+2026-05-25 10:10:55,070 - __main__ - INFO - 
+Liverpool vs Everton (2022-12-15)
+2026-05-25 10:10:55,070 - __main__ - INFO -   Predicted Score: 2-1
+2026-05-25 10:10:55,071 - __main__ - INFO -   Winner: HOME_WIN
+2026-05-25 10:10:55,071 - __main__ - INFO -   Confidence: 0.65 (MEDIUM)
+2026-05-25 10:10:55,071 - __main__ - INFO - 
+Chelsea vs Arsenal (2024-01-20)
+2026-05-25 10:10:55,072 - __main__ - INFO -   Predicted Score: 1-2
+2026-05-25 10:10:55,072 - __main__ - INFO -   Winner: AWAY_WIN
+2026-05-25 10:10:55,073 - __main__ - INFO -   Confidence: 0.65 (MEDIUM)
+2026-05-25 10:10:55,073 - __main__ - INFO - 
+Prediction completed successfully!
+2026-05-25 10:13:37,309 - __main__ - INFO - ======================================================================
+2026-05-25 10:13:37,309 - __main__ - INFO - Starting predictions
+2026-05-25 10:13:37,309 - __main__ - INFO - ======================================================================
+2026-05-25 10:13:37,310 - data_loader - INFO - DataLoader initialized
+2026-05-25 10:13:37,316 - data_loader - INFO - Loaded 380 fixtures
+2026-05-25 10:13:37,325 - data_loader - INFO - Loaded 4325 head-to-head records
+2026-05-25 10:13:37,325 - feature_engineering - INFO - FeatureEngineer initialized
+2026-05-25 10:13:37,335 - __main__ - INFO - Loading models...
+2026-05-25 10:13:37,479 - __main__ - INFO - Loaded home goals model
+2026-05-25 10:13:37,482 - __main__ - INFO - Loaded away goals model
+2026-05-25 10:13:37,483 - __main__ - INFO - Loaded scaler
+2026-05-25 10:13:37,483 - __main__ - INFO - Loaded imputer
+2026-05-25 10:13:37,483 - __main__ - INFO - Loaded 87 feature columns
+2026-05-25 10:13:37,484 - __main__ - INFO - PredictionEngine initialized
+2026-05-25 10:13:37,484 - __main__ - INFO - Predicting 2 matches...
+2026-05-25 10:13:37,484 - __main__ - INFO - Predicting Liverpool vs Everton on 2022-12-15
+2026-05-25 10:13:37,485 - data_loader - INFO - Loaded 20 teams
+2026-05-25 10:13:37,486 - __main__ - INFO - Building match features...
+2026-05-25 10:13:37,515 - data_loader - INFO - Loaded 760 fixture statistics
+2026-05-25 10:13:37,546 - __main__ - INFO - Prediction: Liverpool 2-1 Everton
+2026-05-25 10:13:37,546 - __main__ - INFO - Predicting Chelsea vs Arsenal on 2024-01-20
+2026-05-25 10:13:37,547 - __main__ - INFO - Building match features...
+2026-05-25 10:13:37,592 - __main__ - INFO - Prediction: Chelsea 1-2 Arsenal
+2026-05-25 10:13:37,592 - __main__ - INFO - Predicted 2/2 matches successfully
+2026-05-25 10:13:37,592 - __main__ - INFO - 
+======================================================================
+2026-05-25 10:13:37,592 - __main__ - INFO - PREDICTION RESULTS
+2026-05-25 10:13:37,592 - __main__ - INFO - ======================================================================
+2026-05-25 10:13:37,592 - __main__ - INFO - 
+Liverpool vs Everton (2022-12-15)
+2026-05-25 10:13:37,594 - __main__ - INFO -   Predicted Score: 2-1
+2026-05-25 10:13:37,594 - __main__ - INFO -   Winner: HOME_WIN
+2026-05-25 10:13:37,594 - __main__ - INFO -   Confidence: 0.65 (MEDIUM)
+2026-05-25 10:13:37,594 - __main__ - INFO -   Last 5 head-to-head summary:
+2026-05-25 10:13:37,594 - __main__ - INFO -     Total matches: 5
+2026-05-25 10:13:37,594 - __main__ - INFO -     Home wins: 2
+2026-05-25 10:13:37,594 - __main__ - INFO -     Away wins: 1
+2026-05-25 10:13:37,594 - __main__ - INFO -     Draws: 2
+2026-05-25 10:13:37,594 - __main__ - INFO -     Avg home goals: 1.0
+2026-05-25 10:13:37,594 - __main__ - INFO -     Avg away goals: 1.6
+2026-05-25 10:13:37,594 - __main__ - INFO -     BTTS rate: 40.0%
+2026-05-25 10:13:37,594 - __main__ - INFO -     Over 2.5 goals rate: 40.0%
+2026-05-25 10:13:37,594 - __main__ - INFO -   Last 5 head-to-head matches:
+2026-05-25 10:13:37,596 - __main__ - INFO -     2022-09-03: Everton 0-0 Liverpool (DRAW)
+2026-05-25 10:13:37,596 - __main__ - INFO -     2022-04-24: Liverpool 2-0 Everton (HOME_WIN)
+2026-05-25 10:13:37,596 - __main__ - INFO -     2021-12-01: Everton 1-4 Liverpool (AWAY_WIN)
+2026-05-25 10:13:37,596 - __main__ - INFO -     2021-02-20: Liverpool 0-2 Everton (AWAY_WIN)
+2026-05-25 10:13:37,596 - __main__ - INFO -     2020-10-17: Everton 2-2 Liverpool (DRAW)
+2026-05-25 10:13:37,596 - __main__ - INFO - 
+Chelsea vs Arsenal (2024-01-20)
+2026-05-25 10:13:37,596 - __main__ - INFO -   Predicted Score: 1-2
+2026-05-25 10:13:37,596 - __main__ - INFO -   Winner: AWAY_WIN
+2026-05-25 10:13:37,596 - __main__ - INFO -   Confidence: 0.65 (MEDIUM)
+2026-05-25 10:13:37,596 - __main__ - INFO -   Last 5 head-to-head summary:
+2026-05-25 10:13:37,596 - __main__ - INFO -     Total matches: 5
+2026-05-25 10:13:37,598 - __main__ - INFO -     Home wins: 0
+2026-05-25 10:13:37,598 - __main__ - INFO -     Away wins: 4
+2026-05-25 10:13:37,598 - __main__ - INFO -     Draws: 1
+2026-05-25 10:13:37,598 - __main__ - INFO -     Avg home goals: 2.2
+2026-05-25 10:13:37,598 - __main__ - INFO -     Avg away goals: 1.6
+2026-05-25 10:13:37,598 - __main__ - INFO -     BTTS rate: 60.0%
+2026-05-25 10:13:37,598 - __main__ - INFO -     Over 2.5 goals rate: 80.0%
+2026-05-25 10:13:37,598 - __main__ - INFO -   Last 5 head-to-head matches:
+2026-05-25 10:13:37,598 - __main__ - INFO -     2023-10-21: Chelsea 2-2 Arsenal (DRAW)
+2026-05-25 10:13:37,598 - __main__ - INFO -     2023-05-02: Arsenal 3-1 Chelsea (HOME_WIN)
+2026-05-25 10:13:37,600 - __main__ - INFO -     2022-11-06: Chelsea 0-1 Arsenal (AWAY_WIN)
+2026-05-25 10:13:37,600 - __main__ - INFO -     2022-07-24: Arsenal 4-0 Chelsea (HOME_WIN)
+2026-05-25 10:13:37,600 - __main__ - INFO -     2022-04-20: Chelsea 2-4 Arsenal (AWAY_WIN)
+2026-05-25 10:13:37,600 - __main__ - INFO - 
+Prediction completed successfully!
+2026-05-25 10:22:20,903 - __main__ - INFO - Starting predictions
+2026-05-25 10:22:20,903 - data_loader - INFO - DataLoader initialized
+2026-05-25 10:22:20,909 - data_loader - INFO - Loaded 380 fixtures
+2026-05-25 10:22:20,934 - data_loader - INFO - Loaded 4325 head-to-head records
+2026-05-25 10:22:20,935 - feature_engineering - INFO - FeatureEngineer initialized
+2026-05-25 10:22:20,936 - __main__ - INFO - Loading models...
+2026-05-25 10:22:21,104 - __main__ - INFO - Loaded home goals model
+2026-05-25 10:22:21,106 - __main__ - INFO - Loaded away goals model
+2026-05-25 10:22:21,106 - __main__ - INFO - Loaded scaler
+2026-05-25 10:22:21,108 - __main__ - INFO - Loaded imputer
+2026-05-25 10:22:21,108 - __main__ - INFO - Loaded 87 feature columns
+2026-05-25 10:22:21,108 - __main__ - INFO - PredictionEngine initialized
+2026-05-25 10:22:21,108 - __main__ - INFO - Predicting 2 matches...
+2026-05-25 10:22:21,108 - __main__ - INFO - Predicting Liverpool vs Everton on 2022-12-15
+2026-05-25 10:22:21,111 - data_loader - INFO - Loaded 20 teams
+2026-05-25 10:22:21,112 - __main__ - INFO - Building match features...
+2026-05-25 10:22:21,150 - data_loader - INFO - Loaded 760 fixture statistics
+2026-05-25 10:22:21,176 - __main__ - INFO - Prediction: Liverpool 2-1 Everton
+2026-05-25 10:22:21,177 - __main__ - INFO - Predicting Chelsea vs Arsenal on 2024-01-20
+2026-05-25 10:22:21,178 - __main__ - INFO - Building match features...
+2026-05-25 10:22:21,219 - __main__ - INFO - Prediction: Chelsea 1-2 Arsenal
+2026-05-25 10:22:21,219 - __main__ - INFO - Predicted 2/2 matches successfully
+2026-05-25 10:22:21,219 - __main__ - INFO - 
+======================================================================
+2026-05-25 10:22:21,219 - __main__ - INFO - PREDICTION RESULTS
+2026-05-25 10:22:21,221 - __main__ - INFO - ======================================================================
+2026-05-25 10:22:21,221 - __main__ - INFO - 
+Liverpool vs Everton (2022-12-15)
+2026-05-25 10:22:21,221 - __main__ - INFO -   Predicted Score: 2-1
+2026-05-25 10:22:21,221 - __main__ - INFO -   Winner: HOME_WIN
+2026-05-25 10:22:21,221 - __main__ - INFO -   Confidence: 0.65 (MEDIUM)
+2026-05-25 10:22:21,223 - __main__ - INFO -   Last 5 head-to-head summary:
+2026-05-25 10:22:21,223 - __main__ - INFO -     Total matches: 5
+2026-05-25 10:22:21,223 - __main__ - INFO -     Home wins: 2
+2026-05-25 10:22:21,223 - __main__ - INFO -     Away wins: 1
+2026-05-25 10:22:21,223 - __main__ - INFO -     Draws: 2
+2026-05-25 10:22:21,223 - __main__ - INFO -     Avg home goals: 1.0
+2026-05-25 10:22:21,225 - __main__ - INFO -     Avg away goals: 1.6
+2026-05-25 10:22:21,225 - __main__ - INFO -     BTTS rate: 40.0%
+2026-05-25 10:22:21,225 - __main__ - INFO -     Over 2.5 goals rate: 40.0%
+2026-05-25 10:22:21,226 - __main__ - INFO -   Last 5 head-to-head matches:
+2026-05-25 10:22:21,226 - __main__ - INFO -     2022-09-03: Everton 0-0 Liverpool (DRAW)
+2026-05-25 10:22:21,227 - __main__ - INFO -     2022-04-24: Liverpool 2-0 Everton (HOME_WIN)
+2026-05-25 10:22:21,227 - __main__ - INFO -     2021-12-01: Everton 1-4 Liverpool (AWAY_WIN)
+2026-05-25 10:22:21,228 - __main__ - INFO -     2021-02-20: Liverpool 0-2 Everton (AWAY_WIN)
+2026-05-25 10:22:21,228 - __main__ - INFO -     2020-10-17: Everton 2-2 Liverpool (DRAW)
+2026-05-25 10:22:21,228 - __main__ - INFO - 
+Chelsea vs Arsenal (2024-01-20)
+2026-05-25 10:22:21,229 - __main__ - INFO -   Predicted Score: 1-2
+2026-05-25 10:22:21,230 - __main__ - INFO -   Winner: AWAY_WIN
+2026-05-25 10:22:21,230 - __main__ - INFO -   Confidence: 0.65 (MEDIUM)
+2026-05-25 10:22:21,230 - __main__ - INFO -   Last 5 head-to-head summary:
+2026-05-25 10:22:21,230 - __main__ - INFO -     Total matches: 5
+2026-05-25 10:22:21,230 - __main__ - INFO -     Home wins: 0
+2026-05-25 10:22:21,232 - __main__ - INFO -     Away wins: 4
+2026-05-25 10:22:21,232 - __main__ - INFO -     Draws: 1
+2026-05-25 10:22:21,232 - __main__ - INFO -     Avg home goals: 2.2
+2026-05-25 10:22:21,233 - __main__ - INFO -     Avg away goals: 1.6
+2026-05-25 10:22:21,233 - __main__ - INFO -     BTTS rate: 60.0%
+2026-05-25 10:22:21,233 - __main__ - INFO -     Over 2.5 goals rate: 80.0%
+2026-05-25 10:22:21,233 - __main__ - INFO -   Last 5 head-to-head matches:
+2026-05-25 10:22:21,233 - __main__ - INFO -     2023-10-21: Chelsea 2-2 Arsenal (DRAW)
+2026-05-25 10:22:21,234 - __main__ - INFO -     2023-05-02: Arsenal 3-1 Chelsea (HOME_WIN)
+2026-05-25 10:22:21,234 - __main__ - INFO -     2022-11-06: Chelsea 0-1 Arsenal (AWAY_WIN)
+2026-05-25 10:22:21,234 - __main__ - INFO -     2022-07-24: Arsenal 4-0 Chelsea (HOME_WIN)
+2026-05-25 10:22:21,234 - __main__ - INFO -     2022-04-20: Chelsea 2-4 Arsenal (AWAY_WIN)
+2026-05-25 10:22:21,234 - __main__ - INFO - 
+Prediction completed successfully!
