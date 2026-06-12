@@ -9,7 +9,7 @@ from utils import ensure_output_dir, load_json_array, write_json_array
 
 
 def load_fixture_ids():
-    with open("D:/HQTCSDL/HQTCSDL/output/fixtures.json", "r", encoding="utf-8") as f:
+    with open(OUTPUT_DIR / "fixtures.json", "r", encoding="utf-8") as f:
         fixtures = json.load(f)
 
     # tất cả fixture id từ fixtures.json
@@ -24,7 +24,7 @@ def load_fixture_ids():
                 all_fixture_ids.add(str(fixture["id"]))
 
     # đã có trong events.json
-    events_file = Path("D:/HQTCSDL/HQTCSDL/output/events.json")
+    events_file = OUTPUT_DIR / "events.json"
 
     existing_ids = set()
 

@@ -8,7 +8,7 @@ from clickhouse_client import get_client
 
 def load_team_json() -> List[dict]:
 
-    base_dir = Path(__file__).resolve().parent.parent
+    base_dir = Path(__file__).resolve().parent.parent.parent
     path = base_dir / "database" / "teams.json"
 
     if not path.exists():

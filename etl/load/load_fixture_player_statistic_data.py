@@ -21,7 +21,7 @@ def parse_rating(value: str | None) -> Decimal:
 
 def load_fixture_player_statistics_json() -> List[dict]:
 
-    base_dir = Path(__file__).resolve().parent.parent
+    base_dir = Path(__file__).resolve().parent.parent.parent
     path = base_dir / "database" / "fixture_player_statistics.json"
 
     if not path.exists():
