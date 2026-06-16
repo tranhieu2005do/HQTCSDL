@@ -10,7 +10,7 @@ sys.path.append("/opt/airflow/etl/load")
 
 @dag(
     dag_id="football_etl_pipeline",
-    schedule_interval="@daily",
+    schedule_interval="35 3 * * *",
     start_date=pendulum.datetime(2026, 1, 1, tz="UTC"),
     catchup=False,
     tags=["football", "etl"],

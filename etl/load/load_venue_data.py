@@ -22,46 +22,60 @@ def load_venue_json() -> List[dict]:
 
 
 def insert_venues(data: List[dict]) -> None:
-    """Insert venue records into dim_venue."""
+    """Insert venue records into dim_venue, skipping existing ones."""
 
     client = get_client()
 
-    rows = []
+    try:
+        query_result = client.query("SELECT id FROM dim_venue")
+        existing_ids = {row[0] for row in query_result.result_rows}
+    except Exception as e:
+        print(f"Error querying existing IDs, assuming empty table: {e}")
+        existing_ids = set()
+
+    insert_rows = []
 
     for venue in data:
-
         venue_id = venue.get("id")
-
         if venue_id is None:
             continue
 
-        rows.append((
-            int(venue_id),
-            str(venue.get("name") or ""),
-            venue.get("address") or None,
-            venue.get("city") or None,
-            int(venue["capacity"]) if venue.get("capacity") else None,
-            venue.get("image_url") or ""
+        venue_id = int(venue_id)
+        if venue_id in existing_ids:
+            continue
+
+        name = str(venue.get("name") or "")
+        address = venue.get("address") or None
+        city = venue.get("city") or None
+        capacity = int(venue["capacity"]) if venue.get("capacity") else None
+        image_url = venue.get("image_url") or ""
+
+        insert_rows.append((
+            venue_id,
+            name,
+            address,
+            city,
+            capacity,
+            image_url
         ))
 
-    if not rows:
-        print("No rows to insert")
-        return
-
-    client.insert(
-        "dim_venue",
-        rows,
-        column_names=[
-            "id",
-            "name",
-            "address",
-            "city",
-            "capacity",
-            "image_url"
-        ]
-    )
-
-    print(f"Inserted {len(rows)} rows")
+    if insert_rows:
+        client.insert(
+            "dim_venue",
+            insert_rows,
+            column_names=[
+                "id",
+                "name",
+                "address",
+                "city",
+                "capacity",
+                "image_url"
+            ],
+            settings={"insert_deduplicate": 0}
+        )
+        print(f"Inserted {len(insert_rows)} new rows")
+    else:
+        print("No new rows to insert (all existed)")
 
 
 def main() -> None:

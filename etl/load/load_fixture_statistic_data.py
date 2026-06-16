@@ -46,100 +46,104 @@ def load_fixture_statistics_json() -> List[dict]:
 
 
 def insert_fixture_statistics(data: List[dict]) -> None:
-    """Insert fixture statistics into fact_fixture_statistics."""
+    """Insert only new fixture statistics into fact_fixture_statistics, skipping existing ones."""
 
     client = get_client()
 
-    rows = []
+    try:
+        query_result = client.query("SELECT id FROM fact_fixture_statistics")
+        existing_ids = {row[0] for row in query_result.result_rows}
+    except Exception as e:
+        print(f"Error querying existing IDs, assuming empty table: {e}")
+        existing_ids = set()
+
+    insert_rows = []
 
     for stat in data:
-
         stat_id = stat.get("id")
-
         if stat_id is None:
             continue
 
-        rows.append((
-            int(stat_id),
+        stat_id = int(stat_id)
 
-            int(stat.get("fixture_id") or 0),
-            int(stat.get("team_id") or 0),
+        # Skip if already exists
+        if stat_id in existing_ids:
+            continue
 
-            int(stat.get("Shots on Goal") or 0),
-            int(stat.get("Shots off Goal") or 0),
-            int(stat.get("Total Shots") or 0),
-            int(stat.get("Blocked Shots") or 0),
+        fixture_id = int(stat.get("fixture_id") or 0)
+        team_id = int(stat.get("team_id") or 0)
+        shots_on_goal = int(stat.get("Shots on Goal") or 0)
+        shots_off_goal = int(stat.get("Shots off Goal") or 0)
+        total_shots = int(stat.get("Total Shots") or 0)
+        blocked_shots = int(stat.get("Blocked Shots") or 0)
+        shots_inside_box = int(stat.get("Shots insidebox") or 0)
+        shots_outside_box = int(stat.get("Shots outsidebox") or 0)
+        fouls = int(stat.get("Fouls") or 0)
+        corner_kicks = int(stat.get("Corner Kicks") or 0)
+        offsides = int(stat.get("Offsides") or 0)
+        possession = parse_percent(stat.get("Ball Possession"))
+        yellow_cards = int(stat.get("Yellow Cards") or 0)
+        red_cards = int(stat.get("Red Cards") or 0)
+        goalkeeper_saves = int(stat.get("Goalkeeper Saves") or 0)
+        total_passes = int(stat.get("Total passes") or 0)
+        accurate_passes = int(stat.get("Passes accurate") or 0)
+        pass_accuracy = parse_percent(stat.get("Passes %"))
+        expected_goals = parse_float(stat.get("expected_goals"))
 
-            int(stat.get("Shots insidebox") or 0),
-            int(stat.get("Shots outsidebox") or 0),
-
-            int(stat.get("Fouls") or 0),
-            int(stat.get("Corner Kicks") or 0),
-            int(stat.get("Offsides") or 0),
-
-            parse_percent(
-                stat.get("Ball Possession")
-            ),
-
-            int(stat.get("Yellow Cards") or 0),
-            int(stat.get("Red Cards") or 0),
-
-            int(stat.get("Goalkeeper Saves") or 0),
-
-            int(stat.get("Total passes") or 0),
-            int(stat.get("Passes accurate") or 0),
-
-            parse_percent(
-                stat.get("Passes %")
-            ),
-
-            parse_float(
-                stat.get("expected_goals")
-            )
+        insert_rows.append((
+            stat_id,
+            fixture_id,
+            team_id,
+            shots_on_goal,
+            shots_off_goal,
+            total_shots,
+            blocked_shots,
+            shots_inside_box,
+            shots_outside_box,
+            fouls,
+            corner_kicks,
+            offsides,
+            possession,
+            yellow_cards,
+            red_cards,
+            goalkeeper_saves,
+            total_passes,
+            accurate_passes,
+            pass_accuracy,
+            expected_goals
         ))
 
-    if not rows:
-        print("No rows to insert")
-        return
-
-    client.insert(
-        "fact_fixture_statistics",
-        rows,
-        column_names=[
-            "id",
-
-            "fixture_id",
-            "team_id",
-
-            "shots_on_goal",
-            "shots_off_goal",
-            "total_shots",
-            "blocked_shots",
-
-            "shots_inside_box",
-            "shots_outside_box",
-
-            "fouls",
-            "corner_kicks",
-            "offsides",
-
-            "possession",
-
-            "yellow_cards",
-            "red_cards",
-
-            "goalkeeper_saves",
-
-            "total_passes",
-            "accurate_passes",
-
-            "pass_accuracy",
-
-            "expected_goals"
-        ]
-    )
-
-    print(f"Inserted {len(rows)} rows")
+    if insert_rows:
+        client.insert(
+            "fact_fixture_statistics",
+            insert_rows,
+            column_names=[
+                "id",
+                "fixture_id",
+                "team_id",
+                "shots_on_goal",
+                "shots_off_goal",
+                "total_shots",
+                "blocked_shots",
+                "shots_inside_box",
+                "shots_outside_box",
+                "fouls",
+                "corner_kicks",
+                "offsides",
+                "possession",
+                "yellow_cards",
+                "red_cards",
+                "goalkeeper_saves",
+                "total_passes",
+                "accurate_passes",
+                "pass_accuracy",
+                "expected_goals"
+            ],
+            settings={"insert_deduplicate": 0}
+        )
+        print(f"Inserted {len(insert_rows)} new rows")
+    else:
+        print("No new rows to insert (all existed)")
 
 
 def main() -> None:

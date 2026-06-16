@@ -10,13 +10,12 @@ from tkinter import ttk, messagebox
 from datetime import datetime
 import threading
 
-# ─── Thêm thư mục gốc vào sys.path ────────────────────────────────────────────
+# Thêm thư mục gốc vào sys.path 
 # Đặt file này cùng cấp với thư mục models/
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
 
 
-# ─── Màu sắc & Font ────────────────────────────────────────────────────────────
 BG_MAIN      = "#1a1a2e"
 BG_PANEL     = "#16213e"
 BG_CARD      = "#0f3460"
@@ -54,11 +53,8 @@ class FootballPredictorApp:
         self._build_ui()
         self._load_engine_async()
 
-    # ──────────────────────────────────────────────────────────────────────────
-    # UI BUILD
-    # ──────────────────────────────────────────────────────────────────────────
+    # UI 
     def _build_ui(self):
-        # ── Header ────────────────────────────────────────────────────────────
         header = tk.Frame(self.root, bg=BG_PANEL, pady=12)
         header.pack(fill="x")
 
@@ -71,7 +67,6 @@ class FootballPredictorApp:
             font=FONT_SMALL, fg=TEXT_SUB, bg=BG_PANEL
         ).pack()
 
-        # ── Status bar ────────────────────────────────────────────────────────
         self.status_var = tk.StringVar(value="⏳  Đang khởi động mô hình...")
         status_bar = tk.Frame(self.root, bg=BG_PANEL, padx=16, pady=4)
         status_bar.pack(fill="x")
@@ -81,15 +76,12 @@ class FootballPredictorApp:
         )
         self.status_lbl.pack(fill="x")
 
-        # ── Main area ─────────────────────────────────────────────────────────
         main = tk.Frame(self.root, bg=BG_MAIN)
         main.pack(fill="both", expand=True, padx=20, pady=(8, 20))
         main.columnconfigure(0, weight=1)
 
-        # ── Input card ────────────────────────────────────────────────────────
         self._build_input_card(main)
 
-        # ── Result area ───────────────────────────────────────────────────────
         self._build_result_area(main)
 
     def _build_input_card(self, parent):
@@ -112,7 +104,6 @@ class FootballPredictorApp:
         row.columnconfigure(3, weight=0)
         row.columnconfigure(4, weight=1)
 
-        # Home team
         home_col = tk.Frame(row, bg=BG_PANEL)
         home_col.grid(row=0, column=0, sticky="ew", padx=(0, 8))
         tk.Label(home_col, text="ĐỘI NHÀ", font=FONT_SMALL, fg=TEXT_SUB, bg=BG_PANEL).pack(anchor="w")
@@ -124,11 +115,9 @@ class FootballPredictorApp:
         self.home_cb.pack(fill="x", pady=(2, 0))
         self.home_cb.bind("<KeyRelease>", lambda e: self._filter_teams(self.home_cb, self.home_var))
 
-        # VS label
         tk.Label(row, text="VS", font=("Segoe UI", 14, "bold"),
                  fg=ACCENT, bg=BG_PANEL).grid(row=0, column=1, padx=8)
 
-        # Away team
         away_col = tk.Frame(row, bg=BG_PANEL)
         away_col.grid(row=0, column=2, sticky="ew", padx=(8, 8))
         tk.Label(away_col, text="ĐỘI KHÁCH", font=FONT_SMALL, fg=TEXT_SUB, bg=BG_PANEL).pack(anchor="w")
@@ -140,7 +129,6 @@ class FootballPredictorApp:
         self.away_cb.pack(fill="x", pady=(2, 0))
         self.away_cb.bind("<KeyRelease>", lambda e: self._filter_teams(self.away_cb, self.away_var))
 
-        # Date
         date_col = tk.Frame(row, bg=BG_PANEL)
         date_col.grid(row=0, column=4, sticky="ew", padx=(8, 0))
         tk.Label(date_col, text="NGÀY THI ĐẤU", font=FONT_SMALL, fg=TEXT_SUB, bg=BG_PANEL).pack(anchor="w")
@@ -152,7 +140,6 @@ class FootballPredictorApp:
         )
         self.date_entry.pack(fill="x", pady=(2, 0))
 
-        # Predict button
         btn_row = tk.Frame(card, bg=BG_PANEL)
         btn_row.pack(fill="x", padx=16, pady=(0, 14))
 
@@ -178,7 +165,6 @@ class FootballPredictorApp:
         self.result_frame = tk.Frame(parent, bg=BG_MAIN)
         self.result_frame.pack(fill="both", expand=True)
 
-        # Placeholder text
         self.placeholder = tk.Label(
             self.result_frame,
             text="Chọn hai đội và nhấn Dự Đoán để xem kết quả",
@@ -186,9 +172,7 @@ class FootballPredictorApp:
         )
         self.placeholder.pack(expand=True)
 
-    # ──────────────────────────────────────────────────────────────────────────
-    # ENGINE LOADING
-    # ──────────────────────────────────────────────────────────────────────────
+
     def _load_engine_async(self):
         threading.Thread(target=self._load_engine, daemon=True).start()
 
@@ -216,9 +200,7 @@ class FootballPredictorApp:
         self.status_var.set(f"❌  Lỗi: {msg}")
         self.status_lbl.configure(fg=ACCENT)
 
-    # ──────────────────────────────────────────────────────────────────────────
-    # ACTIONS
-    # ──────────────────────────────────────────────────────────────────────────
+
     def _filter_teams(self, cb: ttk.Combobox, var: tk.StringVar):
         typed = var.get().lower()
         filtered = [t for t in self.team_list if typed in t.lower()]
@@ -270,9 +252,6 @@ class FootballPredictorApp:
             )
             self.placeholder.pack(expand=True)
 
-    # ──────────────────────────────────────────────────────────────────────────
-    # SHOW RESULT
-    # ──────────────────────────────────────────────────────────────────────────
     def _show_result(self, result: dict):
         self.predict_btn.configure(state="normal", text="🔮  DỰ ĐOÁN NGAY")
         self.status_var.set("✅  Dự đoán thành công!")
@@ -281,7 +260,6 @@ class FootballPredictorApp:
         for w in self.result_frame.winfo_children():
             w.destroy()
 
-        # Scrollable container
         canvas = tk.Canvas(self.result_frame, bg=BG_MAIN, highlightthickness=0)
         scrollbar = ttk.Scrollbar(self.result_frame, orient="vertical", command=canvas.yview)
         scroll_frame = tk.Frame(canvas, bg=BG_MAIN)
@@ -296,7 +274,6 @@ class FootballPredictorApp:
         canvas.pack(side="left", fill="both", expand=True)
         scrollbar.pack(side="right", fill="y")
 
-        # Mouse scroll
         canvas.bind_all("<MouseWheel>", lambda e: canvas.yview_scroll(-1 * (e.delta // 120), "units"))
 
         self._build_score_card(scroll_frame, result)
@@ -316,12 +293,10 @@ class FootballPredictorApp:
         winner_text = winner_map.get(winner, winner)
         winner_color = TEXT_WIN if winner == "HOME_WIN" else TEXT_LOSE if winner == "AWAY_WIN" else TEXT_DRAW
 
-        # Title
         tk.Label(card, text="🏆  KẾT QUẢ DỰ ĐOÁN",
                  font=FONT_HEAD, fg=ACCENT2, bg=BG_PANEL).pack(anchor="w")
         tk.Frame(card, bg=BORDER, height=1).pack(fill="x", pady=(4, 12))
 
-        # Score row
         score_row = tk.Frame(card, bg=BG_PANEL)
         score_row.pack(fill="x")
 
@@ -345,11 +320,9 @@ class FootballPredictorApp:
             score_row.columnconfigure(i, weight=1)
         score_row.columnconfigure(1, weight=0)
 
-        # Match date
         tk.Label(card, text=f"📅  {result['match_date']}",
                  font=FONT_SMALL, fg=TEXT_SUB, bg=BG_PANEL).pack(pady=(10, 0))
 
-        # Winner & confidence
         info_row = tk.Frame(card, bg=BG_PANEL)
         info_row.pack(pady=10)
 
@@ -377,7 +350,6 @@ class FootballPredictorApp:
                      font=FONT_BODY, fg=TEXT_SUB, bg=BG_PANEL).pack()
             return
 
-        # ── Summary stats ──────────────────────────────────────────────────
         summary_row = tk.Frame(card, bg=BG_CARD, padx=12, pady=10)
         summary_row.pack(fill="x", pady=(0, 12))
 
@@ -402,8 +374,6 @@ class FootballPredictorApp:
             tk.Label(cell, text=label, font=FONT_SMALL, fg=TEXT_SUB, bg=BG_CARD).pack()
             tk.Label(cell, text=value, font=FONT_HEAD, fg=ACCENT2, bg=BG_CARD).pack()
 
-        # ── Match list ─────────────────────────────────────────────────────
-        # Header
         header = tk.Frame(card, bg=BG_INPUT)
         header.pack(fill="x")
         for col_text, col_width in [("NGÀY", 100), ("ĐỘI NHÀ", 180), ("TỶ SỐ", 80), ("ĐỘI KHÁCH", 180), ("KQ", 100)]:
@@ -427,7 +397,6 @@ class FootballPredictorApp:
 
             kq_text, kq_color = result_map.get(match["result"], (match["result"], TEXT_MAIN))
 
-            # Highlight perspective relative to home team being predicted
             home_name_in_match = match["home_team"]
             away_name_in_match = match["away_team"]
 
@@ -457,7 +426,6 @@ class FootballPredictorApp:
         tk.Label(error_card, text=msg, font=FONT_BODY, fg=TEXT_SUB, bg=BG_PANEL, wraplength=700).pack(pady=8)
 
 
-# ─── Style ─────────────────────────────────────────────────────────────────────
 def apply_style():
     style = ttk.Style()
     style.theme_use("clam")
@@ -476,12 +444,10 @@ def apply_style():
     style.map("TCombobox", fieldbackground=[("readonly", BG_INPUT)])
 
 
-# ─── Entry point ───────────────────────────────────────────────────────────────
 def main():
     root = tk.Tk()
     apply_style()
 
-    # DPI aware on Windows
     try:
         from ctypes import windll
         windll.shcore.SetProcessDpiAwareness(1)
@@ -490,7 +456,6 @@ def main():
 
     app = FootballPredictorApp(root)
     root.mainloop()
-
 
 if __name__ == "__main__":
     main()

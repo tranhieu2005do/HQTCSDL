@@ -41,14 +41,20 @@ def parse_minute(value) -> int:
 
 
 def insert_var_events(data: List[dict]) -> None:
-    """Insert VAR events into fact_var_events."""
+    """Insert only new VAR events into fact_var_events, skipping existing ones."""
 
     client = get_client()
 
-    rows = []
+    try:
+        query_result = client.query("SELECT event_id FROM fact_var_events")
+        existing_ids = {row[0] for row in query_result.result_rows}
+    except Exception as e:
+        print(f"Error querying existing IDs, assuming empty table: {e}")
+        existing_ids = set()
+
+    insert_rows = []
 
     for event in data:
-
         event_id = event.get("event_id")
         fixture_id = event.get("fixture_id")
         team_id = event.get("team_id")
@@ -62,41 +68,47 @@ def insert_var_events(data: List[dict]) -> None:
         ):
             continue
 
-        rows.append((
-            int(event_id),
-            int(fixture_id),
-            int(team_id),
+        event_id = int(event_id)
 
-            int(player_id),
-            event.get("player_name") or "",
+        # Skip if already exists
+        if event_id in existing_ids:
+            continue
 
-            parse_minute(event.get("minute")),
+        fixture_id = int(fixture_id)
+        team_id = int(team_id)
+        player_id = int(player_id)
+        player_name = event.get("player_name") or ""
+        minute = parse_minute(event.get("minute"))
+        detail = event.get("detail") or ""
 
-            event.get("detail") or ""
+        insert_rows.append((
+            event_id,
+            fixture_id,
+            team_id,
+            player_id,
+            player_name,
+            minute,
+            detail
         ))
 
-    if not rows:
-        print("No rows to insert")
-        return
-
-    client.insert(
-        "fact_var_events",
-        rows,
-        column_names=[
-            "event_id",
-            "fixture_id",
-            "team_id",
-
-            "player_id",
-            "player_name",
-
-            "minute",
-
-            "detail"
-        ]
-    )
-
-    print(f"Inserted {len(rows)} rows")
+    if insert_rows:
+        client.insert(
+            "fact_var_events",
+            insert_rows,
+            column_names=[
+                "event_id",
+                "fixture_id",
+                "team_id",
+                "player_id",
+                "player_name",
+                "minute",
+                "detail"
+            ],
+            settings={"insert_deduplicate": 0}
+        )
+        print(f"Inserted {len(insert_rows)} new rows")
+    else:
+        print("No new rows to insert (all existed)")
 
 
 def main() -> None:

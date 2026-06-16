@@ -24,58 +24,70 @@ def load_card_event_json() -> List[dict]:
 
 
 def insert_card_events(data: List[dict]) -> None:
-    """Insert card events into fact_card_events."""
+    """Insert only new card events into fact_card_event, skipping existing ones."""
 
     client = get_client()
 
-    rows = []
+    try:
+        query_result = client.query("SELECT event_id FROM fact_card_event")
+        existing_ids = {row[0] for row in query_result.result_rows}
+    except Exception as e:
+        print(f"Error querying existing IDs, assuming empty table: {e}")
+        existing_ids = set()
+
+    insert_rows = []
 
     for event in data:
-
         event_id = event.get("event_id")
-        minute = int(event.get("minute") or 0)
+        if event_id is None:
+            continue
 
+        event_id = int(event_id)
+
+        # Skip if already exists
+        if event_id in existing_ids:
+            continue
+
+        minute = int(event.get("minute") or 0)
         if minute > 255:
             print(event)
             continue
 
-        if event_id is None:
-            continue
+        fixture_id = int(event.get("fixture_id") or 0)
+        team_id = int(event.get("team_id") or 0)
+        player_id = int(event.get("player_id") or 0)
+        player_name = str(event.get("player_name") or "")
+        detail = str(event.get("detail") or "")
 
-        rows.append((
-            int(event_id),
-
-            int(event.get("fixture_id") or 0),
-            int(event.get("team_id") or 0),
-            int(event.get("player_id") or 0),
-            str(event.get("player_name") or ""),
-            int(event.get("minute") or 0),
-
-            str(event.get("detail") or "")
+        insert_rows.append((
+            event_id,
+            fixture_id,
+            team_id,
+            player_id,
+            player_name,
+            minute,
+            detail
         ))
 
-    if not rows:
-        print("No rows to insert")
-        return
+    if insert_rows:
+        client.insert(
+            "fact_card_event",
+            insert_rows,
+            column_names=[
+                "event_id",
+                "fixture_id",
+                "team_id",
+                "player_id",
+                "player_name",
+                "minute",
+                "detail"
+            ],
+            settings={"insert_deduplicate": 0}
+        )
+        print(f"Inserted {len(insert_rows)} new rows")
+    else:
+        print("No new rows to insert (all existed)")
 
-    client.insert(
-        "fact_card_event",
-        rows,
-        column_names=[
-            "event_id",
-
-            "fixture_id",
-            "team_id",
-            "player_id",
-            "player_name",
-
-            "minute",
-
-            "detail"
-        ]
-    )
-
-    print(f"Inserted {len(rows)} rows")
 
 
 def main() -> None:

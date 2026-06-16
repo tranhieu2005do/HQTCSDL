@@ -12,7 +12,8 @@ def write_json_array(path: Path, values: List[Dict[str, Any]]) -> None:
         json.dump(values, handle, indent=2, ensure_ascii=False)
 
 
-def append_json_array(path: Path, value: Dict[str, Any]) -> None:
+def append_json_array(path, value: Dict[str, Any]) -> None:
+    path = Path(path)
     if path.exists():
         items = load_json_array(path)
     else:

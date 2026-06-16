@@ -1,10 +1,10 @@
 from pathlib import Path
 from typing import Dict, Any
 
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 DATABASE_DIR = PROJECT_ROOT / "database"
 MODELS_DIR = PROJECT_ROOT / "models"
-SAVE_MODEL_DIR = MODELS_DIR / "saved_model"
+SAVE_MODEL_DIR = PROJECT_ROOT / "models" / "v2" / "saved_model"
 ETL_DIR = PROJECT_ROOT / "etl"
 
 # Ensure save model directory exists

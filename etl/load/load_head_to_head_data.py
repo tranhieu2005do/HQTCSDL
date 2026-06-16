@@ -39,58 +39,67 @@ def insert_head_to_head(data: List[dict]) -> None:
 
     client = get_client()
 
-    rows = []
+    try:
+        query_result = client.query("SELECT id FROM head_to_head")
+        existing_ids = {row[0] for row in query_result.result_rows}
+    except Exception as e:
+        print(f"Error querying existing IDs, assuming empty table: {e}")
+        existing_ids = set()
+
+    insert_rows = []
 
     for match in data:
-
         match_id = match.get("id")
-
         if match_id is None:
             continue
 
-        rows.append((
-            int(match_id),
+        match_id = int(match_id)
 
-            int(match.get("home_team_id") or 0),
-            match.get("home_team_name") or None,
+        # Skip if already exists
+        if match_id in existing_ids:
+            continue
 
-            int(match.get("away_team_id") or 0),
-            match.get("away_team_name") or None,
+        home_team_id = int(match.get("home_team_id") or 0)
+        home_team_name = match.get("home_team_name") or None
+        away_team_id = int(match.get("away_team_id") or 0)
+        away_team_name = match.get("away_team_name") or None
+        league_name = match.get("league_name") or None
+        home_goals = int(match.get("home_goals") or 0)
+        away_goals = int(match.get("away_goals") or 0)
+        match_date = parse_date(match.get("date"))
 
-            match.get("league_name") or None,
-
-            int(match.get("home_goals") or 0),
-            int(match.get("away_goals") or 0),
-
-            parse_date(match.get("date"))
+        insert_rows.append((
+            match_id,
+            home_team_id,
+            home_team_name,
+            away_team_id,
+            away_team_name,
+            league_name,
+            home_goals,
+            away_goals,
+            match_date
         ))
 
-    if not rows:
-        print("No rows to insert")
-        return
-
-    client.insert(
-        "head_to_head",
-        rows,
-        column_names=[
-            "id",
-
-            "home_team_id",
-            "home_team_name",
-
-            "away_team_id",
-            "away_team_name",
-
-            "league_name",
-
-            "home_goals",
-            "away_goals",
-
-            "match_date"
-        ]
-    )
-
-    print(f"Inserted {len(rows)} rows")
+    if insert_rows:
+        client.insert(
+            "head_to_head",
+            insert_rows,
+            column_names=[
+                "id",
+                "home_team_id",
+                "home_team_name",
+                "away_team_id",
+                "away_team_name",
+                "league_name",
+                "home_goals",
+                "away_goals",
+                "match_date"
+            ],
+            settings={"insert_deduplicate": 0}
+        )
+        print(f"Inserted {len(insert_rows)} new rows")
+    else:
+        print("No new rows to insert (all existed)")
 
 
 def main() -> None:

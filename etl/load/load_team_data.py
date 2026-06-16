@@ -44,11 +44,18 @@ def load_team_json() -> List[dict]:
 
 
 def insert_teams(data: List[dict]) -> None:
-    """Insert team records into dim_team."""
+    """Insert only new team records into dim_team, skipping existing ones."""
 
     client = get_client()
 
-    rows = []
+    try:
+        query_result = client.query("SELECT id FROM dim_team")
+        existing_ids = {row[0] for row in query_result.result_rows}
+    except Exception as e:
+        print(f"Error querying existing IDs, assuming empty table: {e}")
+        existing_ids = set()
+
+    insert_rows = []
 
     for t in data:
         team = t.get("team") if "team" in t else t
@@ -57,31 +64,39 @@ def insert_teams(data: List[dict]) -> None:
         if team_id is None:
             continue
 
-        rows.append((
-            int(team_id),
-            str(team.get("name") or ""),
-            team.get("code") or None,
-            int(team["founded"]) if team.get("founded") else None,
-            team.get("logo") or team.get("logo_url") or ""
+        team_id = int(team_id)
+        if team_id in existing_ids:
+            continue
+
+        name = str(team.get("name") or "")
+        code = team.get("code") or None
+        founded = int(team["founded"]) if team.get("founded") else None
+        logo_url = team.get("logo") or team.get("logo_url") or ""
+
+        insert_rows.append((
+            team_id,
+            name,
+            code,
+            founded,
+            logo_url
         ))
 
-    if not rows:
-        print("No rows to insert")
-        return
-
-    client.insert(
-        "dim_team",
-        rows,
-        column_names=[
-            "id",
-            "name",
-            "code",
-            "founded",
-            "logo_url"
-        ]
-    )
-
-    print(f"Inserted {len(rows)} rows")
+    if insert_rows:
+        client.insert(
+            "dim_team",
+            insert_rows,
+            column_names=[
+                "id",
+                "name",
+                "code",
+                "founded",
+                "logo_url"
+            ],
+            settings={"insert_deduplicate": 0}
+        )
+        print(f"Inserted {len(insert_rows)} new rows")
+    else:
+        print("No new rows to insert (all existed)")
 
 
 def main() -> None:

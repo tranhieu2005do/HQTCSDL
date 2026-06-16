@@ -22,37 +22,50 @@ def load_coach_json() -> List[dict]:
 
 
 def insert_coaches(data: List[dict]) -> None:
-    """Insert coach records into dim_coaches."""
+    """Insert coach records into dim_coaches, skipping existing ones."""
 
     client = get_client()
 
-    rows = []
+    try:
+        query_result = client.query("SELECT id FROM dim_coaches")
+        existing_ids = {row[0] for row in query_result.result_rows}
+    except Exception as e:
+        print(f"Error querying existing IDs, assuming empty table: {e}")
+        existing_ids = set()
+
+    insert_rows = []
 
     for coach in data:
+        coach_id = int(coach.get("id") or 0)
+        if coach_id == 0:
+            continue
 
-        coach_id = coach.get("id") or 0
+        if coach_id in existing_ids:
+            continue
 
-        rows.append((
-            int(coach_id),
-            coach.get("name") or "Unknown Coach",
-            coach.get("photo") or ""
+        name = coach.get("name") or "Unknown Coach"
+        photo_url = coach.get("photo") or ""
+
+        insert_rows.append((
+            coach_id,
+            name,
+            photo_url
         ))
 
-    if not rows:
-        print("No rows to insert")
-        return
-
-    client.insert(
-        "dim_coaches",
-        rows,
-        column_names=[
-            "id",
-            "name",
-            "photo_url"
-        ]
-    )
-
-    print(f"Inserted {len(rows)} rows")
+    if insert_rows:
+        client.insert(
+            "dim_coaches",
+            insert_rows,
+            column_names=[
+                "id",
+                "name",
+                "photo_url"
+            ],
+            settings={"insert_deduplicate": 0}
+        )
+        print(f"Inserted {len(insert_rows)} new rows")
+    else:
+        print("No new rows to insert (all existed)")
 
 
 def main() -> None:

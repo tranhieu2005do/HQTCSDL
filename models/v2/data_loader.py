@@ -24,7 +24,7 @@ class DataLoader:
             logger.error(f"File not found: {file_path}")
             raise FileNotFoundError(f"Data file not found: {file_path}")
         
-        try:
+        try: 
             with open(file_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 logger.debug(f"Loaded {len(data)} records from {file_path.name}")
